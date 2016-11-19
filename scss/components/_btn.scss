@@ -1,0 +1,27 @@
+/*btn*/
+.btn-menu {
+  display: block;
+
+  width: 24px;
+  height: 17px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.btn-enter {
+  display: block;
+
+  svg {
+    display: none;
+  }
+}
+/*/btn*/

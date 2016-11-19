@@ -1,0 +1,53 @@
+/*typography*/
+.text-reg {
+  font-family: Proxima-Nova-Reg, sans-serif;
+  line-height: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.text-xs {
+  @extend .text-reg;
+  font-size: $fz-xs;
+}
+
+.text-md {
+  @extend .text-reg;
+  font-size: $fz-md;
+}
+
+.text-xs-common {
+  @extend .text-reg;
+  font-size: $fz-xs;
+  color: $color-torea-bay;
+
+  a {
+    color: $color-torea-bay;
+  }
+}
+
+.text-md-common {
+  @extend .text-reg;
+  font-size: $fz-md;
+  color: $color-torea-bay;
+  line-height: 1.33em;
+
+  a {
+    color: $color-torea-bay;
+  }
+}
+
+//text-colors
+.white {
+  color: #fff;
+}
+.torea-bay {
+
+}
+
+//line-height
+.lh-1-33 {
+
+}
+/*/typography*/

@@ -3,8 +3,10 @@ html
     head
         title «Molnia»
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
         link(rel='stylesheet', type='text/css', href='css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='css/slick.css')
+        link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
         link(rel='stylesheet', type='text/css', href='css/style.css')
     body
         div.up-message
@@ -13,37 +15,41 @@ html
                 div.logo-sm.up-message__logo
                     img(src='img/svg/logo-top-sm-blue-copy.svg')
         section.intro
-            div.slider
-                ul.slider__list
-                    li.slider__item
-                    li.slider__item
-                button(type='button').slider__prev
-                button(type='button').slider__next
+            div.intro__buttons
+                div.container.clearfix
+                    button(type='button').btn-menu.intro__menu-btn
+                        img(src='img/svg/menu-humburger.svg')
+                    a(href='#').text-xs.white.btn-enter.intro__enter-btn
+                        img(src='img/svg/smile.svg')
+                        | Вход
+            div.intro-slider.intro__slider.js-slider
+                div.intro-slider__item.js-slider-item
+                div.intro-slider__item.js-slider-item
+                div.slider-nav.intro-slider__nav.js-slider-nav
             div.container
-                button(type='button').menu-btn.intro__menu-btn
-                a(href='#').enter-btn.intro__enter-btn
-                    img(src='smile.svg') Вход
                 div.options.intro__options
-                    div.device-type
-                        div.options-header.device-type__header
-                            img(src='img/svg/logo-molnia-header.svg').options-header__logo
-                            p.text-md.options-header__text
+                    div.info-block.device-type
+                        div.info-block__header.device-type__header
+                            img(src='img/svg/logo-molnia-header.svg').info-block__logo
+                            p.text-md-common.info-block__text
                                 |Починим ваш Apple<br>
                                 a(href='#') в спортзале!
                         p.text-xs.red.deveice-type__error.hide Поле заполнено некорректно
                         form(action='#', method='get').form.device-type__form
-                            select(name='device', data-placeholder='Ваше устройство Apple?').select.form__item
-                                option(value='')
-                                option(value='iPhone4') iPhone4
-                                option(value='iPhone 4S') iPhone 4S
-                                option(value='iPad') iPad
-                                option(value='Apple Watch') Apple Watch
-                            select(name='device', data-placeholder='Что сломалось?').select.form__item
-                                option(value='')
-                                option(value='iPhone4') iPhone4
-                                option(value='iPhone 4S') iPhone 4S
-                                option(value='iPad') iPad
-                                option(value='Apple Watch') Apple Watch
+                            div(data-placeholder='Ваше устройство Apple?').js-select.select.form__item
+                                select(name='device', data-placeholder='Ваше устройство Apple?')
+                                    option(value='')
+                                    option(value='iPhone4') iPhone4
+                                    option(value='iPhone 4S') iPhone 4S
+                                    option(value='iPad') iPad
+                                    option(value='Apple Watch') Apple Watch
+                            div(data-placeholder='Что сломалось?').js-select.select.form__item
+                                select(name='device', data-placeholder='Что сломалось?')
+                                    option(value='')
+                                    option(value='iPhone4') iPhone4
+                                    option(value='iPhone 4S') iPhone 4S
+                                    option(value='iPad') iPad
+                                    option(value='Apple Watch') Apple Watch
                             input(type='text', name='tel').input.form__item
                             input(type='submit', name='device-submit', value='Узнать стоимость').btn.form__item
                     div.menu
@@ -127,8 +133,8 @@ html
                             img(src='img/svg/nam-yasno-s-poluslova.svg').promo__img
                             h3.text-md.promo__item-title Нам ясно с полуслова
                             p.text-xs.promo__text В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
-                    button(type='button').slider__prev
-                    button(type='button').slider__next
+                    button(type='button').js-slider-prev prev
+                    button(type='button').js-slider-next next
         section.prices
             div.slider.prices__list
                 ul.slider__list
@@ -280,3 +286,7 @@ html
                         a(href='#').btn.messengers__link Вконтакте
                     li.messengers__item
                         a(href='#').btn.messengers__link Telegram
+        script(src='js/jquery-3.0.0.min.js')
+        script(src='js/slick.min.js')
+        script(src='js/jquery.formstyler.min.js')
+        script(src='js/script.js')

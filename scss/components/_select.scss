@@ -1,0 +1,31 @@
+/*select*/
+.select {
+  width: 256px;
+  height: 48px;
+
+  border-radius: 100px;
+  border: solid 1px $color-torea-bay;
+
+  box-sizing: border-box;
+
+  .jq-selectbox {
+    width: inherit;
+    height: inherit;
+  }
+
+  .jq-selectbox__select {
+    display: table-cell;
+    vertical-align: middle;
+
+    width: inherit;
+    height: inherit;
+
+    padding-left: 24px;
+    padding-right: 31px;
+  }
+
+  .jq-selectbox__select-text {
+    @extend .text-xs-common;
+  }
+}
+/*/select*/

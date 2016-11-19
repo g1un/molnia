@@ -1,0 +1,15 @@
+/*intro-slider*/
+.intro-slider {
+  
+  &__item {
+    min-height: 192px;
+
+    background: transparent url('../img/slide-01.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__nav {
+    display: none;
+  }
+}
+/*/intro-slider*/

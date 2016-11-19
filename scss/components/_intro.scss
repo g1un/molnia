@@ -1,0 +1,24 @@
+/*intro*/
+.intro {
+
+  &__buttons {
+    padding-bottom: 15px;
+
+    background: $color-torea-bay;
+  }
+
+  &__menu-btn {
+    margin-top: 15px;
+    margin-left: 32px;
+
+    float: left;
+  }
+
+  &__enter-btn {
+    margin-top: 14px;
+    margin-right: 32px;
+
+    float: right;
+  }
+}
+/*/intro*/

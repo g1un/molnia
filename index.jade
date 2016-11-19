@@ -1,0 +1,282 @@
+doctype html
+html
+    head
+        title «Molnia»
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width")
+        link(rel='stylesheet', type='text/css', href='css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+    body
+        div.up-message
+            div.container
+                p.up-message__text Оформите заказ за <span>15:00</span> минут и получите скидку <span>20%</span>
+                div.logo-sm.up-message__logo
+                    img(src='img/svg/logo-top-sm-blue-copy.svg')
+        section.intro
+            div.slider
+                ul.slider__list
+                    li.slider__item
+                    li.slider__item
+                button(type='button').slider__prev
+                button(type='button').slider__next
+            div.container
+                button(type='button').menu-btn.intro__menu-btn
+                a(href='#').enter-btn.intro__enter-btn
+                    img(src='smile.svg') Вход
+                div.options.intro__options
+                    div.device-type
+                        div.options-header.device-type__header
+                            img(src='img/svg/logo-molnia-header.svg').options-header__logo
+                            p.text-md.options-header__text
+                                |Починим ваш Apple<br>
+                                a(href='#') в спортзале!
+                        p.text-xs.red.deveice-type__error.hide Поле заполнено некорректно
+                        form(action='#', method='get').form.device-type__form
+                            select(name='device', data-placeholder='Ваше устройство Apple?').select.form__item
+                                option(value='')
+                                option(value='iPhone4') iPhone4
+                                option(value='iPhone 4S') iPhone 4S
+                                option(value='iPad') iPad
+                                option(value='Apple Watch') Apple Watch
+                            select(name='device', data-placeholder='Что сломалось?').select.form__item
+                                option(value='')
+                                option(value='iPhone4') iPhone4
+                                option(value='iPhone 4S') iPhone 4S
+                                option(value='iPad') iPad
+                                option(value='Apple Watch') Apple Watch
+                            input(type='text', name='tel').input.form__item
+                            input(type='submit', name='device-submit', value='Узнать стоимость').btn.form__item
+                    div.menu
+                        button(type='button').close.menu__close
+                        nav.menu__nav
+                            ul.menu__list
+                                li.menu__item
+                                    a(href='#').menu__link О нас
+                                li.menu__item
+                                    a(href='#').menu__link Помощь
+                                li.menu__item
+                                    a(href='#').menu__link Подарочные карты
+                                li.menu__item
+                                    a(href='#').menu__link Вы мастер?
+                                li.menu__item
+                                    a(href='#').menu__link Рус
+                                    |/
+                                    a(href='#').menu__link Eng
+                                li.menu__item
+                                    a(href='#').menu__link Вход
+                                li.menu__item
+                                    a(href='#').menu__link Ваш город: Санкт-Петербург
+                        div.menu__social.social
+                            h4.text-sm.social__title #Molnia
+                            ul.social__list
+                                li.social__item
+                                    a(href='#').social__link
+                                        img(src='img/svg/soc-icon-fb.svg')
+                                li.social__item
+                                    a(href='#').social__link
+                                        img(src='img/svg/soc-icon-vk.svg')
+                                li.social__item
+                                    a(href='#').social__link
+                                        img(src='img/svg/soc-icon-ig.svg')
+                    div.city
+                        button(type='button').close.city__close
+                        div.options-header.city__header
+                            img(src='img/svg/logo-molnia-header.svg').options-header__logo
+                            p.text-md.options-header__text
+                                | Починим ваш Apple<br>
+                                a(href='#') в вашем городе!
+                        ul.city__list
+                            li.city__item
+                                a(href='#').city__link Москва
+                            li.city__item
+                                a(href='#').city__link Санкт-Петербург
+                            li.city__item
+                                a(href='#').city__link Ростов
+                            li.city__item
+                                a(href='#').city__link Новгород
+                    div.login
+                        button(type='button').close.login__close
+                        div.options-header.login__header
+                            img(src='img/svg/logo-molnia-header.svg').options-header__logo
+                            p.text-md.options-header__text
+                                | Починим ваш Apple<br>
+                                a(href='#') в вашем городе!
+                        p.text-xs.login__text Введите, пожалуйста, свой номер мобильного телефона или e-mail, и мы пришлем вам код для активации
+                        p.text-xs.login__text.hide Введите, пожалуйста, код, который мы отправили вам на мобильный телефон.
+                        p.login__error.hide Поле заполнено некорректно
+                        form(action='#', method='get').form.login__register
+                            input(type='text', name='tel-or-email', placeholder='Номер телефона или e-mail').input.form__item
+                            input(type='submit', name='register-submit', value='Продолжить').btn.form__item
+                        form(action='#', method='get').form.login__entry.hide
+                            input(type='text', name='code', placeholder='_ _ _ _').input.form__item
+                            input(type='submit', name='entry-submit', value='Продолжить').btn.form__item
+        section.frame
+            div.container.promo
+                h2.text-md.promo__title Наши преимущества
+                div.slider
+                    ul.promo__list
+                        li.promo__item
+                            img(src='img/svg/tam-gde-vam-udobno.svg').promo__img
+                            h3.text-md.promo__item-title Там, где вам удобно
+                            p.text-xs.promo__text Мастер приедет, куда вы скажете. Кинотеатр, офис, парк — любое удобное для вас место и время.
+                        li.slider__item
+                            img(src='img/svg/vashe-vremya-bezcenno.svg').promo__img
+                            h3.text-md.promo__item-title Ваше время бесценно
+                            p.text-xs.promo__text Не тратьте время на поездку в мастерскую и ожидание ремонта. Дела не ждут, а время — дар!
+                        li.slider__item
+                            img(src='img/svg/nam-yasno-s-poluslova.svg').promo__img
+                            h3.text-md.promo__item-title Нам ясно с полуслова
+                            p.text-xs.promo__text В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    button(type='button').slider__prev
+                    button(type='button').slider__next
+        section.prices
+            div.slider.prices__list
+                ul.slider__list
+                    li.slider__item
+                        img(src='img/sec-3-slide-1.jpg')
+                        ul.tags
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                    li.slider__item
+                        img(src='img/sec-3-slide-1.jpg')
+                        ul.tags
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                    li.slider__item
+                        img(src='img/sec-3-slide-1.jpg')
+                        ul.tags
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                            li.tags__item
+                button(type='button').slider__prev
+                button(type='button').slider__next
+            div.info-block.prices-device.prices__info
+                img(src='img/svg/logo-molnia-header.svg').prices-device__logo
+                nav.prices-device__nav
+                    ul.prices-device__list
+                        li.prices-device__item
+                            a(href='#').prices-device__link Apple Watch
+                        li.prices-device__item
+                            a(href='#').prices-device__link iPhone
+                        li.prices-device__item
+                            a(href='#').prices-device__link iPod
+                table.prices-device__table.prices-table
+                    tr.prices-table__tr
+                        td.prices-table__td Замена стекла
+                        td.prices-table__td от 1500 руб.
+                    tr.prices-table__tr.hide
+                        td(colspan='2').prices-table__info Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    tr.prices-table__tr
+                        td.prices-table__td Замена стекла
+                        td.prices-table__td от 1600 руб.
+                    tr.prices-table__tr.hide
+                        td(colspan='2').prices-table__info 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    tr.prices-table__tr
+                        td.prices-table__td Замена стекла
+                        td.prices-table__td от 1700 руб.
+                    tr.prices-table__tr.hide
+                        td(colspan='2').prices-table__info 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    tr.prices-table__tr
+                        td.prices-table__td Замена стекла
+                        td.prices-table__td от 1800 руб.
+                    tr.prices-table__tr.hide
+                        td(colspan='2').prices-table__info 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+        section.frame
+            div.container.promo
+                h2.text-md.promo__title Как вызвать Molnia?
+                ul.promo__list
+                    li.promo__item
+                        img(src='img/svg/ukazhite-polomku.svg').promo__img
+                        h3.text-md.promo__item-title
+                            |1.<br>
+                            |Укажите поломки<br>
+                            |вашего устройства
+                    li.promo__item
+                        img(src='img/svg/kuda-i-kogda-priehat.svg').promo__img
+                        h3.text-md.promo__item-title
+                            |2.<br>
+                            |Куда и когда<br>
+                            |приехать?
+                    li.promo__item
+                        img(src='img/svg/viberite-udachniy-sposob-oplaty.svg').promo__img
+                        h3.text-md.promo__item-title
+                            |3.<br>
+                            |Выберите удобный<br>
+                            |способ оплаты
+                a(href='#').btn Легко!
+        section.gift
+            div.container
+                div.info-block.gift-info
+                    div.info-block__header.gift-info__header
+                        img(src='img/svg/logo-molnia-header.svg').info-block__logo
+                        p.text-md.options-header__text Если у вас всё ОК, позабодтесь о друге!
+                    div.gift-info__price
+                        div.gift-info__price-title Подарочная карта
+                        div.gift-info__price-value от 500 руб.
+                    p.gift-info__text Подарочная карта — классный подарок! Очень подарочный и всякое такое!
+                    a(href='#').btn Заказать
+        section.frame
+            div.container.reviews
+                h2.text-md.reviews__title О нас говорят:
+                div.slider
+                    ul.reviews__list
+                        li.reviews__item
+                            img(src='img/avatar-1.jpg').reviews__img
+                            h3.reviews__author Лариса Зверева
+                            h4.reviews__company Time out
+                            p.reviews__text Мастер приедет туда, куда вы скажете. Дом, кинотеатр, офис, парк — нам подойдет любое удобное для вас место и время.
+                        li.reviews__item
+                            img(src='img/avatar-2.jpg').reviews__img
+                            h3.reviews__author Борис Савченко
+                            h4.reviews__company The Village
+                            p.reviews__text Дела не ждут! Не тратьте время на поездку в мастерскую и ожидание ремонта. Лучше займитесь чем-нибудь.
+                        li.reviews__item
+                            img(src='img/avatar-3.jpg').reviews__img
+                            h3.reviews__author Анна Романовская
+                            h4.reviews__company Atas
+                            p.reviews__text Простой заказ за 1 минуту, без лишних звонков. В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    button(type='button').slider__prev
+                    button(type='button').slider__next
+        footer.footer
+            div.logo-sm.footer__logo
+                img(src='img/svg/logo-top-sm-blue-copy.svg')
+            div.footer__up
+                ul.footer__menu
+                    li.footer__menu-item
+                        a(href='#').footer__menu-link О сервисе
+                    li.footer__menu-item
+                        a(href='#').footer__menu-link Работа в Molnia
+                    li.footer__menu-item
+                        a(href='#').footer__menu-link Вопросы и ответы
+                    li.footer__menu-item
+                        a(href='#').footer__menu-link Пользовательское соглашение
+                div.footer__info
+                    p.footer__schedule с 8:00 до 00:00 / без выходных
+                    a(href='tel:+7 921 432 45 63').footer__tel +7 921 432 45 63
+                    a(href='mailto:real@molnia.pro').footer__email real@molnia.pro
+                div.footer__social.social
+                    h4.text-sm.social__title #Molnia
+                    ul.social__list
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-fb.svg')
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-vk.svg')
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-ig.svg')
+            div.footer__messengers.messengers
+                h3.messengers__title Пишите нам в мессенджеры:
+                ul.messengers__list
+                    li.messengers__item
+                        a(href='#').btn.messengers__link Messenger
+                    li.messengers__item
+                        a(href='#').btn.messengers__link Вконтакте
+                    li.messengers__item
+                        a(href='#').btn.messengers__link Telegram

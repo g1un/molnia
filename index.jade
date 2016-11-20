@@ -4,10 +4,6 @@ html
         title «Molnia»
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
-        link(rel='stylesheet', type='text/css', href='css/normalize.css')
-        link(rel='stylesheet', type='text/css', href='css/slick.css')
-        link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
-        link(rel='stylesheet', type='text/css', href='css/jquery.scrollbar.css')
         link(rel='stylesheet', type='text/css', href='css/style.css')
     body
         div.up-message
@@ -59,7 +55,7 @@ html
                                     option(value='iPhone 4S') iPhone 4S
                                     option(value='iPad') iPad
                                     option(value='Apple Watch') Apple Watch
-                            input(type='text', name='tel', placeholder='+7 ( _ _ _ ) _ _ _ - _ _ - _ _').btn-input.form__item.js-tel
+                            input(type='tel', name='tel', placeholder='+7 ( _ _ _ ) _ _ _ - _ _ - _ _').btn-input.form__item.js-tel
                             input(type='submit', name='device-submit', value='Узнать стоимость').btn-hover.form__item
                     div.menu.hide
                         button(type='button').close.menu__close
@@ -294,9 +290,4 @@ html
             div.logo-sm-red.footer__logo
                 img(src='img/svg/logo-top-sm-blue-copy.svg')
 
-        script(src='js/jquery-3.0.0.min.js')
-        script(src='js/slick.min.js')
-        script(src='js/jquery.formstyler.js')
-        script(src='js/enscroll-0.6.2.min.js')
-        script(src='js/jquery.maskedinput.min.js')
-        script(src='js/script.js')
+        script(src='js/all.js')

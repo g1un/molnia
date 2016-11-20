@@ -9,6 +9,9 @@ var svgmin = require('gulp-svgmin');
 var img64 = require('gulp-img64');
 var svgstore = require('gulp-svgstore');
 var runSequence = require('run-sequence');
+var cssnano = require('gulp-cssnano');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('sass', function(){
   return gulp.src('scss/style.scss')
@@ -20,6 +23,7 @@ gulp.task('sass', function(){
       browsers: ['> 0%']
     })
   ]))
+  .pipe(cssnano())
   .pipe(gulp.dest('app/css'))
   .pipe(browserSync.reload({
     stream: true
@@ -61,11 +65,19 @@ gulp.task('reload', function(){
         }))
 });
 
-gulp.task('watch', ['browserSync', 'jade', 'sass', 'inline'], function(){
-  gulp.watch('**/*.scss', ['sass']);
-  gulp.watch('**/*.jade', function() {
+gulp.task('scripts', function() {
+    gulp.src(['js/jquery-3.0.0.min.js', 'js/slick.min.js', 'js/jquery.formstyler.js', 'js/enscroll-0.6.2.min.js', 'js/jquery.maskedinput.min.js', 'js/script.js'])
+        .pipe(concat('all.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('app/js'))
+});
+
+gulp.task('watch', ['browserSync', 'jade', 'sass', 'inline', 'scripts'], function(){
+    gulp.watch('**/*.scss', ['sass']);
+    gulp.watch('**/*.jade', function() {
       runSequence('jade', 'inline', 'reload');
-  });
+    });
+    gulp.watch('js/*.js', ['scripts']);
 });
 
 gulp.task('browserSync', function() {

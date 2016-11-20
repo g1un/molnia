@@ -1,4 +1,9 @@
 /*style*/
+//plugins
+@import "plugins/normalize";
+@import "plugins/slick";
+@import "plugins/jquery.formstyler";
+
 @import 'components/fonts';
 @import 'components/variables';
 @import 'components/typography';

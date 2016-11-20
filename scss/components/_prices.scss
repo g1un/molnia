@@ -1,0 +1,19 @@
+/*prices*/
+.prices {
+
+  &__item {
+    min-height: 192px;
+
+    background: transparent url('../img/sec-3-slide-1.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__nav {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+    margin-left: -33px;
+  }
+}
+/*/prices*/

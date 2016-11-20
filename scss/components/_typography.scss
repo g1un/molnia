@@ -7,14 +7,27 @@
   text-transform: none;
 }
 
+.text-semibold {
+  font-family: Proxima-Nova-Semibold, sans-serif;
+  line-height: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+
 .text-xs {
   @extend .text-reg;
   font-size: $fz-xs;
 }
 
-.text-md {
+.text-xxs-common {
   @extend .text-reg;
-  font-size: $fz-md;
+  font-size: $fz-xxs;
+  color: $color-torea-bay;
+
+  a {
+    color: $color-torea-bay;
+  }
 }
 
 .text-xs-common {
@@ -25,6 +38,42 @@
   a {
     color: $color-torea-bay;
   }
+}
+
+.text-semibold-xs-common {
+  @extend .text-semibold;
+  font-size: $fz-xs;
+  color: $color-torea-bay;
+
+  a {
+    color: $color-torea-bay;
+  }
+}
+
+.text-semibold-sm-common {
+  @extend .text-semibold;
+  font-size: $fz-sm;
+  color: $color-torea-bay;
+
+  a {
+    color: $color-torea-bay;
+  }
+}
+
+.text-md {
+  @extend .text-reg;
+  font-size: $fz-md;
+}
+
+.text-semibold-md {
+  @extend .text-semibold;
+  font-size: $fz-md;
+}
+
+.text-semibold-md-common {
+  @extend .text-semibold;
+  font-size: $fz-md;
+  color: $color-torea-bay;
 }
 
 .text-md-common {
@@ -42,12 +91,17 @@
 .white {
   color: #fff;
 }
-.torea-bay {
 
+.red-radical {
+  color: $color-red-radical;
 }
 
 //line-height
-.lh-1-33 {
+.lh-2 {
+  line-height: 2em;
+}
 
+.lh-1-5 {
+  line-height: 1.5em;
 }
 /*/typography*/

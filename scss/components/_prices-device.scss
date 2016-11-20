@@ -1,0 +1,23 @@
+/*prices-device*/
+.prices-device {
+
+  &__logo {
+    margin-bottom: 58px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 65px;
+  }
+
+  &__link {
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+/*/prices-device*/

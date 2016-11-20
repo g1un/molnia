@@ -1,4 +1,25 @@
 /*btn*/
+.btn {
+  display: block;
+
+  width: 256px;
+  height: 48px;
+  box-sizing: border-box;
+
+  padding-left: 24px;
+  padding-right: 31px;
+
+  border-radius: 100px;
+  border: solid 1px $color-torea-bay;
+  outline: none;
+
+  background: #fff;
+
+  @extend .text-xs-common;
+
+  @include placeholder(1, $color-torea-bay);
+}
+
 .btn-menu {
   display: block;
 
@@ -22,6 +43,79 @@
 
   svg {
     display: none;
+  }
+}
+
+.btn-input {
+  @extend .btn;
+}
+
+.btn-hover {
+  @extend .btn;
+  @extend .text-semibold;
+
+  border: none;
+
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+
+  background: $color-torea-bay;
+
+  &:hover,
+  &:focus {
+    background: $color-red-radical;
+  }
+}
+
+.btn-border {
+  @extend .btn;
+  @extend .text-semibold;
+
+  border: 1px solid #fff;
+
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+
+  background: $color-torea-bay;
+
+  &__fb {
+    display: block;
+    float: left;
+
+    margin-top: 10px;
+    margin-left: -10px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  &__vk {
+    display: block;
+    float: left;
+
+    margin-top: 14px;
+    margin-left: -10px;
+
+    width: 36px;
+    height: 20px;
+  }
+
+  &__tg {
+    display: block;
+    float: left;
+
+    margin-top: 13px;
+    margin-left: -10px;
+
+    width: 26px;
+    height: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-red-radical;
   }
 }
 /*/btn*/

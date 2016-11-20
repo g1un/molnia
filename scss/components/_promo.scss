@@ -1,0 +1,65 @@
+/*promo*/
+.promo {
+
+  &__list {
+    padding-bottom: 46px;
+  }
+
+  &__title {
+    display: none;
+
+    margin: 30px 20px 25px;
+  }
+
+  &__wrapper {
+    padding: 52px 19px 47px;
+  }
+
+  &__img {
+    display: block;
+
+    margin: 0 auto 13px;
+  }
+
+  &__item-title {
+    margin-bottom: 38px;
+
+    text-align: center;
+  }
+
+  &__text {
+    line-height: 2em;
+    text-align: center;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+  &--call {
+    padding-bottom: 60px;
+
+    .promo {
+
+      &__slider {
+        margin-bottom: 31px;
+      }
+
+      &__title {
+        display: block;
+      }
+
+      &__nav {
+        position: absolute;
+        bottom: -125px;
+        left: 50%;
+        margin-left: -33px;
+      }
+
+      &__item-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/*promo*/

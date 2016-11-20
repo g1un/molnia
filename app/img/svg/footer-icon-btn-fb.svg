@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="23.85105 24 0 24 0 0.00045 23.85105 0.00045"></polygon>
+    </defs>
+    <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1248-13-(choose-device)" transform="translate(-143.000000, -4084.000000)">
+            <g id="footer-icon-btn-fb" transform="translate(143.000000, 4084.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M13.11105,14.96295 L10.07355,11.70345 L4.14855,14.96295 L10.66605,7.99995 L13.77705,11.25945 L19.63005,7.99995 L13.11105,14.96295 Z M11.92605,0.00045 C5.33955,0.00045 -0.00045,4.97445 -0.00045,11.11095 C-0.00045,14.60745 1.73355,17.72745 4.44405,19.76295 L4.44405,24.00045 L8.50455,21.75795 C9.58905,22.05945 10.73655,22.22295 11.92605,22.22295 C18.51255,22.22295 23.85105,17.24745 23.85105,11.11095 C23.85105,4.97445 18.51255,0.00045 11.92605,0.00045 L11.92605,0.00045 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

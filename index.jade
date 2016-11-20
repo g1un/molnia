@@ -7,6 +7,7 @@ html
         link(rel='stylesheet', type='text/css', href='css/normalize.css')
         link(rel='stylesheet', type='text/css', href='css/slick.css')
         link(rel='stylesheet', type='text/css', href='css/jquery.formstyler.css')
+        link(rel='stylesheet', type='text/css', href='css/jquery.scrollbar.css')
         link(rel='stylesheet', type='text/css', href='css/style.css')
     body
         div.up-message
@@ -39,10 +40,18 @@ html
                             div(data-placeholder='Ваше устройство Apple?').js-select.select.form__item
                                 select(name='device', data-placeholder='Ваше устройство Apple?')
                                     option(value='')
-                                    option(value='iPhone4') iPhone4
-                                    option(value='iPhone 4S') iPhone 4S
-                                    option(value='iPad') iPad
-                                    option(value='Apple Watch') Apple Watch
+                                    option(value='iPhone4') iPhone 1
+                                    option(value='iPhone 4S') iPhone 2
+                                    option(value='iPad') iPad 3
+                                    option(value='Apple Watch') Apple Watch 4
+                                    option(value='iPhone4') iPhone 5
+                                    option(value='iPhone 4S') iPhone 6
+                                    option(value='iPad') iPad 7
+                                    option(value='Apple Watch') Apple Watch 8
+                                    option(value='iPhone4') iPhone 9
+                                    option(value='iPhone 4S') iPhone 10
+                                    option(value='iPad') iPad 11
+                                    option(value='Apple Watch') Apple Watch 12
                             div(data-placeholder='Что сломалось?').js-select.select.form__item
                                 select(name='device', data-placeholder='Что сломалось?')
                                     option(value='')
@@ -50,9 +59,9 @@ html
                                     option(value='iPhone 4S') iPhone 4S
                                     option(value='iPad') iPad
                                     option(value='Apple Watch') Apple Watch
-                            input(type='text', name='tel').input.form__item
-                            input(type='submit', name='device-submit', value='Узнать стоимость').btn.form__item
-                    div.menu
+                            input(type='text', name='tel', placeholder='+7 ( _ _ _ ) _ _ _ - _ _ - _ _').btn-input.form__item.js-tel
+                            input(type='submit', name='device-submit', value='Узнать стоимость').btn-hover.form__item
+                    div.menu.hide
                         button(type='button').close.menu__close
                         nav.menu__nav
                             ul.menu__list
@@ -84,7 +93,7 @@ html
                                 li.social__item
                                     a(href='#').social__link
                                         img(src='img/svg/soc-icon-ig.svg')
-                    div.city
+                    div.city.hide
                         button(type='button').close.city__close
                         div.options-header.city__header
                             img(src='img/svg/logo-molnia-header.svg').options-header__logo
@@ -100,7 +109,7 @@ html
                                 a(href='#').city__link Ростов
                             li.city__item
                                 a(href='#').city__link Новгород
-                    div.login
+                    div.login.hide
                         button(type='button').close.login__close
                         div.options-header.login__header
                             img(src='img/svg/logo-molnia-header.svg').options-header__logo
@@ -111,182 +120,183 @@ html
                         p.text-xs.login__text.hide Введите, пожалуйста, код, который мы отправили вам на мобильный телефон.
                         p.login__error.hide Поле заполнено некорректно
                         form(action='#', method='get').form.login__register
-                            input(type='text', name='tel-or-email', placeholder='Номер телефона или e-mail').input.form__item
+                            input(type='text', name='tel-or-email', placeholder='Номер телефона или e-mail').btn-input.form__item
                             input(type='submit', name='register-submit', value='Продолжить').btn.form__item
                         form(action='#', method='get').form.login__entry.hide
-                            input(type='text', name='code', placeholder='_ _ _ _').input.form__item
+                            input(type='text', name='code', placeholder='_ _ _ _').btn-input.form__item
                             input(type='submit', name='entry-submit', value='Продолжить').btn.form__item
-        section.frame
+        section.frame-red
             div.container.promo
                 h2.text-md.promo__title Наши преимущества
-                div.slider
-                    ul.promo__list
-                        li.promo__item
+                div.promo__list.js-slider
+                    div.promo__item.js-slider-item
+                        div.promo__wrapper
                             img(src='img/svg/tam-gde-vam-udobno.svg').promo__img
-                            h3.text-md.promo__item-title Там, где вам удобно
-                            p.text-xs.promo__text Мастер приедет, куда вы скажете. Кинотеатр, офис, парк — любое удобное для вас место и время.
-                        li.slider__item
+                            h3.text-semibold-md-common.promo__item-title Там, где вам удобно
+                            p.text-xs-common.promo__text Мастер приедет, куда вы скажете. Кинотеатр, офис, парк — любое удобное для вас место и время.
+                    div.slider__item.js-slider-item
+                        div.promo__wrapper
                             img(src='img/svg/vashe-vremya-bezcenno.svg').promo__img
-                            h3.text-md.promo__item-title Ваше время бесценно
-                            p.text-xs.promo__text Не тратьте время на поездку в мастерскую и ожидание ремонта. Дела не ждут, а время — дар!
-                        li.slider__item
+                            h3.text-semibold-md-common.promo__item-title Ваше время бесценно
+                            p.text-xs-common.promo__text Не тратьте время на поездку в мастерскую и ожидание ремонта. Дела не ждут, а время — дар!
+                    div.slider__item.js-slider-item
+                        div.promo__wrapper
                             img(src='img/svg/nam-yasno-s-poluslova.svg').promo__img
-                            h3.text-md.promo__item-title Нам ясно с полуслова
-                            p.text-xs.promo__text В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
-                    button(type='button').js-slider-prev prev
-                    button(type='button').js-slider-next next
+                            h3.text-semibold-md-common.promo__item-title Нам ясно с полуслова
+                            p.text-xs-common.promo__text В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    div.slider-nav.clearfix.js-slider-nav
         section.prices
-            div.slider.prices__list
-                ul.slider__list
-                    li.slider__item
-                        img(src='img/sec-3-slide-1.jpg')
-                        ul.tags
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                    li.slider__item
-                        img(src='img/sec-3-slide-1.jpg')
-                        ul.tags
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                    li.slider__item
-                        img(src='img/sec-3-slide-1.jpg')
-                        ul.tags
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                            li.tags__item
-                button(type='button').slider__prev
-                button(type='button').slider__next
+            div.prices__list.js-slider
+                div.prices__item.js-slider-item
+                    ul.tags
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                div.prices__item.js-slider-item
+                    ul.tags
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                div.prices__item.js-slider-item
+                    ul.tags
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                        li.tags__item
+                div.slider-nav.prices__nav.js-slider-nav
             div.info-block.prices-device.prices__info
-                img(src='img/svg/logo-molnia-header.svg').prices-device__logo
-                nav.prices-device__nav
-                    ul.prices-device__list
-                        li.prices-device__item
-                            a(href='#').prices-device__link Apple Watch
-                        li.prices-device__item
-                            a(href='#').prices-device__link iPhone
-                        li.prices-device__item
-                            a(href='#').prices-device__link iPod
-                table.prices-device__table.prices-table
-                    tr.prices-table__tr
-                        td.prices-table__td Замена стекла
-                        td.prices-table__td от 1500 руб.
-                    tr.prices-table__tr.hide
-                        td(colspan='2').prices-table__info Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                    tr.prices-table__tr
-                        td.prices-table__td Замена стекла
-                        td.prices-table__td от 1600 руб.
-                    tr.prices-table__tr.hide
-                        td(colspan='2').prices-table__info 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                    tr.prices-table__tr
-                        td.prices-table__td Замена стекла
-                        td.prices-table__td от 1700 руб.
-                    tr.prices-table__tr.hide
-                        td(colspan='2').prices-table__info 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                    tr.prices-table__tr
-                        td.prices-table__td Замена стекла
-                        td.prices-table__td от 1800 руб.
-                    tr.prices-table__tr.hide
-                        td(colspan='2').prices-table__info 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-        section.frame
-            div.container.promo
-                h2.text-md.promo__title Как вызвать Molnia?
-                ul.promo__list
-                    li.promo__item
+                img(src='img/svg/logo-molnia-header.svg').info-block__logo.prices-device__logo
+                ul.prices-device__nav
+                    li.prices-device__item
+                        a(href='#').text-semibold-xs-common.prices-device__link Apple Watch
+                    li.prices-device__item
+                        a(href='#').text-semibold-xs-common.prices-device__link iPhone
+                    li.prices-device__item
+                        a(href='#').text-semibold-xs-common.prices-device__link iPod
+                div.prices-device__info
+                    div.two-columns
+                        div.text-semibold-xs-common.two-columns__left Замена стекла
+                        div.text-xs-common.two-columns__right от 1500 руб.
+                        p.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    div.two-columns
+                        div.text-semibold-xs-common.two-columns__left Замена стекла
+                        div.text-xs-common.two-columns__right от 1600 руб.
+                        p.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    div.two-columns
+                        div.text-semibold-xs-common.two-columns__left Замена стекла
+                        div.text-xs-common.two-columns__right от 1700 руб.
+                        p.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                    div.two-columns
+                        div.text-semibold-xs-common.two-columns__left Замена стекла
+                        div.text-xs-common.two-columns__right от 1800 руб.
+                        p.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+        section.frame-torea
+            div.container.promo.promo--call
+                h2.text-md-common.promo__title Как вызвать Molnia?
+                div.promo__slider.js-slider
+                    div.promo__item.js-slider-item
                         img(src='img/svg/ukazhite-polomku.svg').promo__img
-                        h3.text-md.promo__item-title
+                        h3.text-semibold-md-common.promo__item-title
                             |1.<br>
                             |Укажите поломки<br>
                             |вашего устройства
-                    li.promo__item
+                    div.promo__item.js-slider-item
                         img(src='img/svg/kuda-i-kogda-priehat.svg').promo__img
-                        h3.text-md.promo__item-title
+                        h3.text-semibold-md-common.promo__item-title
                             |2.<br>
                             |Куда и когда<br>
                             |приехать?
-                    li.promo__item
+                    div.promo__item.js-slider-item
                         img(src='img/svg/viberite-udachniy-sposob-oplaty.svg').promo__img
-                        h3.text-md.promo__item-title
+                        h3.text-semibold-md-common.promo__item-title
                             |3.<br>
                             |Выберите удобный<br>
                             |способ оплаты
-                a(href='#').btn Легко!
+                    div.slider-nav.clearfix.promo__nav.js-slider-nav
+                a(href='#').btn-hover.promo__btn Легко!
         section.gift
             div.container
-                div.info-block.gift-info
-                    div.info-block__header.gift-info__header
+                div.info-block
+                    div.info-block__header
                         img(src='img/svg/logo-molnia-header.svg').info-block__logo
-                        p.text-md.options-header__text Если у вас всё ОК, позабодтесь о друге!
-                    div.gift-info__price
-                        div.gift-info__price-title Подарочная карта
-                        div.gift-info__price-value от 500 руб.
-                    p.gift-info__text Подарочная карта — классный подарок! Очень подарочный и всякое такое!
-                    a(href='#').btn Заказать
-        section.frame
+                        p.text-md-common.info-block__text Если у вас всё ОК, позабодтесь о друге!
+                    div.two-columns.two-columns--low.gift__info
+                        div.text-semibold-xs-common.red-radical.two-columns__left Подарочная карта
+                        div.text-xs-common.two-columns__right.gift__price от 500 руб.
+                        p.text-xs-common.lh-2.two-columns__info Подарочная карта — классный подарок! Очень подарочный и всякое такое!
+                    a(href='#').btn-hover Заказать
+        section.frame-red
             div.container.reviews
-                h2.text-md.reviews__title О нас говорят:
-                div.slider
-                    ul.reviews__list
-                        li.reviews__item
+                h2.text-md.red-radical.lh-1-5.reviews__title О нас говорят:
+                div.reviews__slider.js-slider
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
                             img(src='img/avatar-1.jpg').reviews__img
-                            h3.reviews__author Лариса Зверева
-                            h4.reviews__company Time out
-                            p.reviews__text Мастер приедет туда, куда вы скажете. Дом, кинотеатр, офис, парк — нам подойдет любое удобное для вас место и время.
-                        li.reviews__item
+                            h3.text-semibold-xs-common.reviews__author Лариса Зверева
+                            h4.text-xxs-common.lh-2.reviews__company Time out
+                            p.text-xs-common.lh-2.reviews__text Мастер приедет туда, куда вы скажете. Дом, кинотеатр, офис, парк — нам подойдет любое удобное для вас место и время.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
                             img(src='img/avatar-2.jpg').reviews__img
-                            h3.reviews__author Борис Савченко
-                            h4.reviews__company The Village
-                            p.reviews__text Дела не ждут! Не тратьте время на поездку в мастерскую и ожидание ремонта. Лучше займитесь чем-нибудь.
-                        li.reviews__item
+                            h3.text-semibold-xs-common.reviews__author Борис Савченко
+                            h4.text-xxs-common.lh-2.reviews__company The Village
+                            p.text-xs-common.lh-2.reviews__text Дела не ждут! Не тратьте время на поездку в мастерскую и ожидание ремонта. Лучше займитесь чем-нибудь.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
                             img(src='img/avatar-3.jpg').reviews__img
-                            h3.reviews__author Анна Романовская
-                            h4.reviews__company Atas
-                            p.reviews__text Простой заказ за 1 минуту, без лишних звонков. В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
-                    button(type='button').slider__prev
-                    button(type='button').slider__next
+                            h3.text-semibold-xs-common.reviews__author Анна Романовская
+                            h4.text-xxs-common.lh-2.reviews__company Atas
+                            p.text-xs-common.lh-2.reviews__text Простой заказ за 1 минуту, без лишних звонков. В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    div.slider-nav.js-slider-nav
         footer.footer
-            div.logo-sm.footer__logo
-                img(src='img/svg/logo-top-sm-blue-copy.svg')
-            div.footer__up
-                ul.footer__menu
-                    li.footer__menu-item
-                        a(href='#').footer__menu-link О сервисе
-                    li.footer__menu-item
-                        a(href='#').footer__menu-link Работа в Molnia
-                    li.footer__menu-item
-                        a(href='#').footer__menu-link Вопросы и ответы
-                    li.footer__menu-item
-                        a(href='#').footer__menu-link Пользовательское соглашение
-                div.footer__info
-                    p.footer__schedule с 8:00 до 00:00 / без выходных
-                    a(href='tel:+7 921 432 45 63').footer__tel +7 921 432 45 63
-                    a(href='mailto:real@molnia.pro').footer__email real@molnia.pro
-                div.footer__social.social
-                    h4.text-sm.social__title #Molnia
-                    ul.social__list
-                        li.social__item
-                            a(href='#').social__link
-                                img(src='img/svg/soc-icon-fb.svg')
-                        li.social__item
-                            a(href='#').social__link
-                                img(src='img/svg/soc-icon-vk.svg')
-                        li.social__item
-                            a(href='#').social__link
-                                img(src='img/svg/soc-icon-ig.svg')
+            ul.footer__menu
+                li.footer__menu-item
+                    a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link О сервисе
+                li.footer__menu-item
+                    a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Работа в Molnia
+                li.footer__menu-item
+                    a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Вопросы и ответы
+                li.footer__menu-item
+                    a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Пользовательское соглашение
             div.footer__messengers.messengers
-                h3.messengers__title Пишите нам в мессенджеры:
+                h3.text-xs-common.white.lh-2.messengers__title Пишите нам в мессенджеры:
                 ul.messengers__list
                     li.messengers__item
-                        a(href='#').btn.messengers__link Messenger
+                        a(href='#').btn-border.messengers__link
+                            img(src='img/svg/footer-icon-btn-fb.svg').btn-border__fb
+                            |Messenger
                     li.messengers__item
-                        a(href='#').btn.messengers__link Вконтакте
+                        a(href='#').btn-border.messengers__link
+                            img(src='img/svg/footer-icon-btn-vk.svg').btn-border__vk
+                            |Вконтакте
                     li.messengers__item
-                        a(href='#').btn.messengers__link Telegram
+                        a(href='#').btn-border.messengers__link
+                            img(src='img/svg/footer-icon-btn-tg.svg').btn-border__tg
+                            |Telegram
+            div.footer__info
+                p.text-semibold-xs-common.white.lh-2.footer__schedule с 8:00 до 00:00 / без выходных
+                a(href='tel:+7 921 432 45 63').text-semibold-xs-common.white.lh-2.footer__tel +7 921 432 45 63
+                a(href='mailto:real@molnia.pro').text-semibold-xs-common.white.lh-2.footer__email real@molnia.pro
+            div.footer__social.social
+                h4.text-semibold-sm-common.white.social__title #Molnia
+                ul.social__list
+                    li.social__item
+                        a(href='#').social__link
+                            img(src='img/svg/soc-icon-fb.svg').social__img
+                    li.social__item
+                        a(href='#').social__link
+                            img(src='img/svg/soc-icon-vk.svg').social__img
+                    li.social__item
+                        a(href='#').social__link
+                            img(src='img/svg/soc-icon-ig.svg').social__img
+            div.logo-sm-red.footer__logo
+                img(src='img/svg/logo-top-sm-blue-copy.svg')
+
         script(src='js/jquery-3.0.0.min.js')
         script(src='js/slick.min.js')
-        script(src='js/jquery.formstyler.min.js')
+        script(src='js/jquery.formstyler.js')
+        script(src='js/enscroll-0.6.2.min.js')
+        script(src='js/jquery.maskedinput.min.js')
         script(src='js/script.js')

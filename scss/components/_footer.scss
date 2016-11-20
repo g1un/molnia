@@ -1,0 +1,46 @@
+/*footer*/
+.footer {
+  padding: 44px 32px 75px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: $color-torea-bay;
+
+  &__logo {
+
+  }
+
+  &__menu {
+    margin-bottom: 32px;
+  }
+
+  &__messengers {
+    margin-bottom: 51px;
+  }
+
+  &__info {
+    margin-bottom: 29px;
+  }
+
+  &__schedule {
+    margin-bottom: 32px;
+  }
+
+  &__tel {
+    display: block;
+  }
+
+  &__email {
+    display: block;
+  }
+
+  &__social {
+    margin-bottom: 56px;
+  }
+
+  &__logo {
+    margin: 0 auto;
+  }
+}
+/*/footer*/

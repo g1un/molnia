@@ -1,0 +1,27 @@
+/*reviews*/
+.reviews {
+  padding-bottom: 46px;
+
+  &__title {
+    margin: 20px 19px 25px;
+  }
+
+  &__wrapper {
+    padding: 0 20px 48px;
+  }
+
+  &__img {
+    max-height: 128px;
+
+    margin-bottom: 15px;
+  }
+
+  &__author {
+    margin-bottom: 10px;
+  }
+
+  &__company {
+    margin-bottom: 3px;
+  }
+}
+/*/reviews*/

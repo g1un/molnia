@@ -2,13 +2,12 @@
 .footer {
   padding: 44px 32px 75px;
 
-  display: flex;
-  flex-direction: column;
-
   background: $color-torea-bay;
 
-  &__logo {
+  .container {
+    width: $block-width;
 
+    margin: 0 auto;
   }
 
   &__menu {
@@ -41,6 +40,51 @@
 
   &__logo {
     margin: 0 auto;
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-left: 62px;
+    padding-right: 62px;
+
+    .container {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      height: 397px;
+    }
+
+    &__messengers {
+      margin-bottom: 0;
+    }
+
+    &__social {
+      margin-bottom: 92px;
+    }
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .container {
+      width: $block-width;
+      display: block;
+
+      height: auto;
+    }
+
+    &__messengers {
+      margin-bottom: 51px;
+    }
+
+    &__social {
+      margin-bottom: 56px;
+    }
   }
 }
 /*/footer*/

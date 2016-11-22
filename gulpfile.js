@@ -23,7 +23,7 @@ gulp.task('sass', function(){
       browsers: ['> 0%']
     })
   ]))
-  .pipe(cssnano())
+  .pipe(cssnano({zindex: false}))
   .pipe(gulp.dest('app/css'))
   .pipe(browserSync.reload({
     stream: true
@@ -42,7 +42,7 @@ gulp.task('inline', function(){
   return gulp.src('app/*.html')
     .pipe(inline({
       base: 'app/img/svg',
-      disabledTypes: ['js', 'css'],
+      disabledTypes: ['js', 'css', 'img'],
       ignore: ['css', 'js', 'fonts']
     }))
     .pipe(gulp.dest('app'));

@@ -1,0 +1,15 @@
+/*options*/
+.options {
+  position: static;
+
+  //iPhone 4 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    min-height: 607px;
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    min-height: 607px;
+  }
+}
+/*/options*/

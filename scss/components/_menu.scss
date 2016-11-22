@@ -1,0 +1,39 @@
+/*menu*/
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  padding-bottom: 56px;
+
+  background: $color-torea-bay;
+
+  &__nav {
+    margin-bottom: 27px;
+  }
+
+  &__item {
+    line-height: 3em;
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-top: 10px;
+
+    &__item {
+      line-height: 2em;
+    }
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-top: 10px;
+
+    &__item {
+      line-height: 2em;
+    }
+  }
+}
+/*/menu*/

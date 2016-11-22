@@ -3,11 +3,16 @@
   padding-bottom: 46px;
 
   &__title {
-    margin: 20px 19px 25px;
+    width: 256px;
+    
+    margin: 20px auto 25px;
   }
 
   &__wrapper {
-    padding: 0 20px 48px;
+    padding: 0 0 48px;
+    width: $block-width;
+
+    margin: 0 auto;
   }
 
   &__img {
@@ -22,6 +27,76 @@
 
   &__company {
     margin-bottom: 3px;
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__title {
+      margin-top: 46px;
+
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 2 * $block-width;
+      box-sizing: border-box;
+      padding-left: 60px;
+
+      margin: 0 auto 32px;
+    }
+
+    &__img,
+    &__author,
+    &__company {
+      float: left;
+      clear: left;
+    }
+
+    &__company {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      width: $block-width;
+
+      margin-left: 196px;
+    }
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__title {
+      margin-top: 20px;
+
+      text-align: left;
+    }
+
+    &__wrapper {
+      width: $block-width;
+      box-sizing: content-box;
+      padding-left: 0;
+
+      margin: 0 auto;
+    }
+
+    &__img,
+    &__author,
+    &__company {
+      float: none;
+      clear: none;
+    }
+
+    &__company {
+      margin-bottom: 3px;
+    }
+
+    &__text {
+      width: auto;
+
+      margin-left: 0;
+    }
   }
 }
 /*/reviews*/

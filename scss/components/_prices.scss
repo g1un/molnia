@@ -1,6 +1,10 @@
 /*prices*/
 .prices {
 
+  .container {
+    overflow: auto;
+  }
+
   &__item {
     min-height: 192px;
 
@@ -14,6 +18,72 @@
     bottom: 30px;
     left: 50%;
     margin-left: -33px;
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container {
+      min-height: 607px;
+    }
+
+    &__list {
+      position: absolute;
+      width: 100%;
+    }
+
+    &__item {
+      min-height: 607px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__info {
+      width: $block-width;
+
+      margin: 32px auto 0;
+
+      background: #fff;
+    }
+  }
+
+  //iPhone 6 portrait
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    &__item {
+      min-height: 240px;
+    }
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .container {
+      min-height: 607px;
+    }
+
+    &__list {
+      position: absolute;
+      width: 100%;
+    }
+
+    &__item {
+      min-height: 607px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__info {
+      width: $block-width;
+
+      margin: 32px auto 0;
+
+      background: #fff;
+    }
   }
 }
 /*/prices*/

@@ -1,6 +1,10 @@
 /*intro*/
 .intro {
 
+  &__options {
+    overflow: auto;
+  }
+
   &__buttons {
     padding-bottom: 15px;
 
@@ -19,6 +23,30 @@
     margin-right: 32px;
 
     float: right;
+  }
+
+  //iPhone 4 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__device-type {
+      width: $block-width;
+
+      margin: 33px auto 0;
+
+      background: #fff;
+    }
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__device-type {
+      width: $block-width;
+
+      margin: 33px auto 0;
+
+      background: #fff;
+    }
   }
 }
 /*/intro*/

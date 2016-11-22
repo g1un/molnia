@@ -1,0 +1,30 @@
+/*city*/
+.city {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  padding-bottom: 149px;
+
+  background: $color-torea-bay;
+
+  &__close {
+
+    rect {
+      fill: $color-red-radical;
+    }
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-bottom: 56px;
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    padding-bottom: 56px;
+  }
+}
+/*/city*/

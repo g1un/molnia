@@ -66,6 +66,14 @@
   &:focus {
     background: $color-red-radical;
   }
+
+  &--torea {
+
+    &:hover,
+    &:focus {
+      background: $color-torea-bay;
+    }
+  }
 }
 
 .btn-border {
@@ -116,6 +124,24 @@
   &:hover,
   &:focus {
     border-color: $color-red-radical;
+  }
+}
+
+.btn-border-red {
+  @extend .btn;
+  @extend .text-reg;
+
+  padding-right: 24px;
+
+  border: 1px solid $color-torea-bay;
+
+  line-height: 48px;
+  text-align: center;
+
+  background: $color-red-radical;
+
+  &--error {
+    border-color: #fff;
   }
 }
 /*/btn*/

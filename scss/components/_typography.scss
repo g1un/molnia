@@ -90,6 +90,10 @@
 //text-colors
 .white {
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 .red-radical {
@@ -97,11 +101,15 @@
 }
 
 //line-height
+.lh-1-5 {
+  line-height: 1.5em;
+}
+
 .lh-2 {
   line-height: 2em;
 }
 
-.lh-1-5 {
-  line-height: 1.5em;
+.lh-3 {
+  line-height: 3em;
 }
 /*/typography*/

@@ -1,0 +1,42 @@
+/*login*/
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  padding-bottom: 66px;
+
+  background: $color-red-radical;
+
+  &__close {
+
+    rect {
+      fill: $color-torea-bay;
+    }
+  }
+
+  &__logo {
+    width: 40px;
+    height: 54px;
+  }
+
+  &__header {
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__error {
+    position: absolute;
+    top: -44px;
+  }
+}
+/*/login*/

@@ -8,11 +8,15 @@
   &__title {
     display: none;
 
-    margin: 30px 20px 25px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 
   &__wrapper {
-    padding: 52px 19px 47px;
+    padding: 52px 0 47px;
+
+    width: 256px;
+    margin: 0 auto;
   }
 
   &__img {
@@ -41,6 +45,10 @@
 
     .promo {
 
+      &__wrapper {
+        padding: 25px 0 0;
+      }
+
       &__slider {
         margin-bottom: 31px;
       }
@@ -58,6 +66,109 @@
 
       &__item-title {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__title {
+      display: block;
+
+      margin-left: 0;
+
+      text-align: center;
+    }
+
+    &__wrapper {
+      padding-top: 34px;
+      width: 512px;
+    }
+
+    &__img {
+      float: left;
+    }
+
+    &__item-title {
+      width: 256px;
+
+      margin-top: 14px;
+      margin-left: 256px;
+    }
+
+    &__text {
+      width: 256px;
+
+      margin-left: 256px;
+    }
+
+    &--call {
+
+      .promo {
+
+        &__title {
+          margin-bottom: 26px;
+        }
+
+        &__wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__img {
+          float: none;
+        }
+
+        &__item-title {
+          margin-bottom: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__title {
+      display: none;
+    }
+
+    &__wrapper {
+      padding-top: 52px;
+      width: 256px;
+    }
+
+    &__img {
+      float: none;
+    }
+
+    &__item-title {
+      width: auto;
+
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    &__text {
+      width: auto;
+
+      margin-left: 0;
+    }
+
+    &--call {
+
+      .promo {
+
+        &__title {
+          margin-bottom: 0;
+        }
+
+        &__wrapper {
+          display: block;
+        }
       }
     }
   }

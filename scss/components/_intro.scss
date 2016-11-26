@@ -26,7 +26,7 @@
   }
 
   //iPad portrait
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  @media only screen and (min-width: 768px) {
 
     &__device-type {
       width: $block-width;
@@ -38,7 +38,7 @@
   }
 
   //iPad landscape
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 1024px) {
 
     &__options {
       display: flex;
@@ -51,7 +51,7 @@
     }
 
     &__device-type {
-      background: #fff;
+      margin: 0;
     }
   }
 

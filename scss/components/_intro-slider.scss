@@ -13,7 +13,7 @@
   }
 
   //iPad portrait
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  @media only screen and (min-width: 768px) {
     position: absolute;
     width: 100%;
 
@@ -32,12 +32,16 @@
   }
 
   //iPad landscape
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 1024px) {
     position: absolute;
     width: 100%;
 
     &__item {
       min-height: 736px;
+    }
+
+    &__nav {
+      display: none;
     }
   }
 

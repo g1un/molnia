@@ -21,7 +21,7 @@
   }
 
   //iPad portrait
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  @media only screen and (min-width: 768px) {
 
     .container {
       min-height: 736px;
@@ -53,7 +53,7 @@
   }
 
   //iPad landscape
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 1024px) {
 
     .container {
       min-height: 736px;
@@ -83,11 +83,7 @@
     }
 
     &__info {
-      width: $block-width;
-
-      margin-top: 96px;
-
-      background: #fff;
+      margin: 96px 0 0;
     }
   }
 

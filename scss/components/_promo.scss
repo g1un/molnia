@@ -142,6 +142,45 @@
     }
   }
 
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    &__title {
+      display: block;
+      width: 3 * $block-width + 2 * 128px;
+    }
+
+    &__list {
+      width: 3 * $block-width + 3 * 128px;
+    }
+
+    &__wrapper {
+      padding-top: 0;
+    }
+
+    &--call {
+
+      .promo {
+
+        &__list {
+          padding-bottom: 63px;
+        }
+
+        &__title {
+          width: 3 * $block-width + 2 * 128px;
+          margin-top: 74px;
+          margin-bottom: 26px;
+
+          text-align: left;
+        }
+
+        &__nav {
+          bottom: -94px;
+        }
+      }
+    }
+  }
+
   ///iPhone 6+ landscape
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 

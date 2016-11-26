@@ -7,6 +7,11 @@
     min-height: 736px;
   }
 
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+    min-height: 640px;
+  }
+
   //iPhone 5 landscape
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     min-height: 607px;

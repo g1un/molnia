@@ -64,6 +64,22 @@
     }
   }
 
+  //Laptop >= 1440
+  @media only screen and (min-width: $width-xlg) {
+
+    &__item {
+      height: 736px;
+    }
+  }
+
+  //Laptop >= 1920
+  @media only screen and (min-width: $width-xxlg) {
+
+    &__item {
+      height: 864px;
+    }
+  }
+
   //iPhone 5 landscape
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     position: absolute;

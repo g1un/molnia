@@ -71,6 +71,19 @@
     }
   }
 
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    &__title {
+      width: 3 * $block-width + 2 * 128px;
+    }
+
+    &__slider {
+      width: 3 * $block-width + 3 * 128px;
+    }
+
+  }
+
   //iPhone 6+ landscape
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 

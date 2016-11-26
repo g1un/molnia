@@ -87,6 +87,57 @@
     }
   }
 
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    .container {
+      min-height: 640px;
+    }
+
+    &__table {
+      width: $container-lg;
+
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    &__list {
+      position: absolute;
+      width: 100%;
+    }
+
+    &__item {
+      min-height: 640px;
+    }
+
+    &__nav {
+      bottom: 46px;
+    }
+
+    &__info {
+      margin: 48px 0 0;
+    }
+  }
+
+  //Laptop >= 1440
+  @media only screen and (min-width: $width-xlg) {
+
+    .container {
+      height: 736px;
+    }
+
+    &__item {
+      min-height: 736px;
+    }
+
+    &__info {
+      margin: 96px 0 0;
+    }
+  }
+
   //iPhone 5 landscape
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 

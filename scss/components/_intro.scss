@@ -99,7 +99,26 @@
     &__device-type {
       background: #fff;
     }
+  }
 
+  //Laptop >= 1440
+  @media only screen and (min-width: $width-xlg) {
+
+    &__options {
+      height: 736px;
+      padding-top: 128px;
+      box-sizing: border-box;
+
+      align-items: flex-start;
+    }
+  }
+
+  //Laptop >= 1920
+  @media only screen and (min-width: $width-xxlg) {
+
+    &__options {
+      height: 864px;
+    }
   }
 
   //iPhone 5 landscape

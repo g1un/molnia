@@ -73,12 +73,6 @@
 
     .container {
       width: 2 * $block-width + 222px;
-      height: 397px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      flex-wrap: wrap;
     }
 
     &__messengers {
@@ -110,6 +104,56 @@
 
         margin: 0 auto;
       }
+    }
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    .container {
+      width: $footer-lg;
+      height: auto;
+      box-sizing: border-box;
+      padding-right: 100px;
+
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__logo {
+      order: 1;
+      align-self: flex-start;
+
+      width: auto;
+
+      margin: 0 60px 0 0;
+    }
+
+    &__menu {
+      order: 2;
+
+      margin: 0 143px 0 0;
+    }
+
+    &__info {
+      order: 3;
+
+      margin: 0 128px 0 0;
+    }
+
+    &__social {
+      order: 4;
+      align-self: flex-start;
+
+      margin: 64px 0 0;
+    }
+
+    &__messengers {
+      order: 5;
+
+      margin: 32px 0 0 100px;
+
+      width: 100%;
     }
   }
 

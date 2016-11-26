@@ -9,7 +9,7 @@ $('.js-slider').each(function (idx, item) {
 
 	// alert(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.height >= 1024) || (screen.width >= 1024 && screen.height >= 768)) && $(this).hasClass('js-slider-2'));
 
-	if(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.height >= 1024) || (screen.width >= 1024 && screen.height >= 768)) && $(this).hasClass('js-slider-2')) {
+	if(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.width < 1280) && $(this).hasClass('js-slider-2'))) {
 		$(this).slick({
 			slide: "#" + carouselId + " .js-slider-item",
 			appendArrows: "#" + carouselId + " .js-slider-nav",
@@ -17,6 +17,15 @@ $('.js-slider').each(function (idx, item) {
 			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
 			infinite: false,
 			slidesToShow: 2
+		});
+	} else if(window.devicePixelRatio < 2 && (screen.width >= 1280) && $(this).hasClass('js-slider-2')) {
+		$(this).slick({
+			slide: "#" + carouselId + " .js-slider-item",
+			appendArrows: "#" + carouselId + " .js-slider-nav",
+			prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
+			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
+			infinite: false,
+			slidesToShow: 3
 		});
 	} else {
 		$(this).slick({

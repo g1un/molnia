@@ -25,8 +25,85 @@
     float: right;
   }
 
-  //iPhone 4 landscape
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  //iPad portrait
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    &__device-type {
+      width: $block-width;
+
+      margin: 96px auto 0;
+
+      background: #fff;
+    }
+  }
+
+  //iPad landscape
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    &__options {
+      display: flex;
+      align-items: center;
+
+      width: $block-ipad;
+      min-height: 736px;
+
+      margin: 0 auto;
+    }
+
+    &__device-type {
+      background: #fff;
+    }
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    &__buttons {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+      padding: 33px 0 0;
+
+      background: transparent;
+
+      .container {
+        width: $menu-lg;
+        margin: 0 auto;
+      }
+    }
+
+    &__menu-btn {
+      margin: 0;
+    }
+
+    &__enter-btn {
+      margin: 0 114px 0 0;
+
+      font-size: $fz-md;
+      color: $color-torea-bay;
+    }
+
+    &__options {
+      display: flex;
+      align-items: center;
+
+      width: $container-lg;
+      min-height: $width-lg / 2;
+
+      margin: 0 auto;
+    }
+
+    &__device-type {
+      background: #fff;
+    }
+
+  }
+
+  //iPhone 5 landscape
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
     &__device-type {
       width: $block-width;
@@ -39,6 +116,18 @@
 
   //iPhone 6 landscape
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__device-type {
+      width: $block-width;
+
+      margin: 33px auto 0;
+
+      background: #fff;
+    }
+  }
+
+  //iPhone 6+ landscape
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
     &__device-type {
       width: $block-width;

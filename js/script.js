@@ -1,18 +1,32 @@
 /*script*/
-// $(document).ready( function () {
-// 	alert($( window ).height());
-// });
+$(document).ready( function () {
+	// alert(window.devicePixelRatio + ' ' + screen.width + ' ' + screen.height + ' ' + window.orientation);
+});
 //slider
 $('.js-slider').each(function (idx, item) {
 	var carouselId = "slider-" + idx;
 	this.id = carouselId;
-	$(this).slick({
-		slide: "#" + carouselId + " .js-slider-item",
-		appendArrows: "#" + carouselId + " .js-slider-nav",
-		prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-		nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-		infinite: false
-	});
+
+	// alert(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.height >= 1024) || (screen.width >= 1024 && screen.height >= 768)) && $(this).hasClass('js-slider-2'));
+
+	if(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.height >= 1024) || (screen.width >= 1024 && screen.height >= 768)) && $(this).hasClass('js-slider-2')) {
+		$(this).slick({
+			slide: "#" + carouselId + " .js-slider-item",
+			appendArrows: "#" + carouselId + " .js-slider-nav",
+			prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
+			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
+			infinite: false,
+			slidesToShow: 2
+		});
+	} else {
+		$(this).slick({
+			slide: "#" + carouselId + " .js-slider-item",
+			appendArrows: "#" + carouselId + " .js-slider-nav",
+			prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
+			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
+			infinite: false
+		});
+	}
 });
 
 //formstyler

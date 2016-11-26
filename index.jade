@@ -8,9 +8,9 @@ html
     body
         div.up-message
             div.container
-                p.up-message__text Оформите заказ за <span>15:00</span> минут и получите скидку <span>20%</span>
                 div.logo-sm.up-message__logo
                     img(src='img/svg/logo-top-sm-blue-copy.svg')
+                p.text-semibold-md-common.up-message__text Оформите заказ за <span class='white'>15:00</span> минут и получите скидку <span class='white'>20%</span>
         section.intro
             div.intro__buttons
                 div.container.clearfix
@@ -130,7 +130,7 @@ html
         section.frame-red
             div.container.promo
                 h2.text-md-common.promo__title Наши преимущества
-                div.promo__list.js-slider
+                div.promo__list.js-slider.js-slider-2
                     div.promo__item.js-slider-item
                         div.promo__wrapper
                             img(src='img/svg/tam-gde-vam-udobno.svg').promo__img
@@ -169,37 +169,38 @@ html
                             li.tags__item
                             li.tags__item
                     div.slider-nav.prices__nav.js-slider-nav
-                div.info-block.prices-device.prices__info
-                    div.info-block__wrapper
-                        img(src='img/svg/logo-molnia-header.svg').info-block__logo.prices-device__logo
-                        ul.prices-device__nav
-                            li.prices-device__item
-                                a(href='#').text-semibold-xs-common.prices-device__link Apple Watch
-                            li.prices-device__item
-                                a(href='#').text-semibold-xs-common.prices-device__link iPhone
-                            li.prices-device__item
-                                a(href='#').text-semibold-xs-common.prices-device__link iPod
-                        div.prices-device__info
-                            div.two-columns
-                                div.text-semibold-xs-common.two-columns__left Замена стекла
-                                div.text-xs-common.two-columns__right от 1500 руб.
-                                p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                            div.two-columns
-                                div.text-semibold-xs-common.two-columns__left Замена стекла
-                                div.text-xs-common.two-columns__right от 1600 руб.
-                                p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                            div.two-columns
-                                div.text-semibold-xs-common.two-columns__left Замена стекла
-                                div.text-xs-common.two-columns__right от 1700 руб.
-                                p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                            div.two-columns
-                                div.text-semibold-xs-common.two-columns__left Замена стекла
-                                div.text-xs-common.two-columns__right от 1800 руб.
-                                p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                div.prices__table
+                    div.info-block.prices-device.prices__info
+                        div.info-block__wrapper
+                            img(src='img/svg/logo-molnia-header.svg').info-block__logo.prices-device__logo
+                            ul.prices-device__nav
+                                li.prices-device__item
+                                    a(href='#').text-semibold-xs-common.prices-device__link Apple Watch
+                                li.prices-device__item
+                                    a(href='#').text-semibold-xs-common.prices-device__link iPhone
+                                li.prices-device__item
+                                    a(href='#').text-semibold-xs-common.prices-device__link iPod
+                            div.prices-device__info
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1500 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1600 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1700 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1800 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
         section.frame-torea
             div.container.promo.promo--call
                 h2.text-md-common.promo__title Как вызвать Molnia?
-                div.promo__slider.js-slider
+                div.promo__list.js-slider.js-slider-2
                     div.promo__item.js-slider-item
                         div.promo__wrapper
                             img(src='img/svg/ukazhite-polomku.svg').promo__img
@@ -238,7 +239,7 @@ html
         section.frame-red
             div.container.reviews
                 h2.text-md.red-radical.lh-1-5.reviews__title О нас говорят:
-                div.reviews__slider.js-slider
+                div.reviews__slider.js-slider.js-slider-2
                     div.reviews__item.js-slider-item
                         div.reviews__wrapper
                             img(src='img/avatar-1.jpg').reviews__img

@@ -3,5 +3,31 @@
   display: none;
 
   background: $color-red-radical;
+
+  &__text {
+    margin: 0 40px;
+
+    line-height: 64px;
+    text-align: center;
+  }
+
+  &__logo {
+    float: right;
+
+    margin-top: 12px;
+
+    width: 31px;
+    height: 41px;
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+    display: block;
+
+    .container {
+      width: 1028px;
+      margin: 0 auto;
+    }
+  }
 }
 /*/up-message*/

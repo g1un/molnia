@@ -42,6 +42,101 @@
     margin: 0 auto;
   }
 
+  //iPad portrait
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .container {
+      width: 2 * $block-width + 33px;
+      height: 397px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__messengers {
+      margin-bottom: 0;
+    }
+
+    &__schedule {
+      margin-bottom: 93px;
+    }
+
+    &__social {
+      margin-bottom: 92px;
+    }
+  }
+
+  //iPad landscape
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .container {
+      width: 2 * $block-width + 222px;
+      height: 397px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__messengers {
+      margin-bottom: 0;
+    }
+
+    &__info {
+      width: $block-width;
+      align-self: flex-end;
+      margin-bottom: 93px;
+    }
+
+    &__social {
+      width: $block-width;
+      align-self: flex-end;
+      margin-bottom: 87px;
+    }
+
+    &__logo {
+      width: $block-width;
+      align-self: flex-end;
+
+      margin: 0;
+
+      svg {
+        display: block;
+        height: 53px;
+        width: 39px;
+
+        margin: 0 auto;
+      }
+    }
+  }
+
+  //iPhone 6+ landscape
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    padding-left: 62px;
+    padding-right: 62px;
+
+    .container {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      height: 397px;
+    }
+
+    &__messengers {
+      margin-bottom: 0;
+    }
+
+    &__social {
+      margin-bottom: 92px;
+    }
+  }
+
   //iPhone 6 landscape
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     padding-left: 62px;

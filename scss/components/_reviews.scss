@@ -29,8 +29,50 @@
     margin-bottom: 3px;
   }
 
-  //iPhone 6 landscape
-  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  //iPad portrait
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    &__title {
+      width: 2 * $block-width + 33px;
+
+      margin-top: 62px;
+      margin-bottom: 26px;
+    }
+
+    &__slider {
+      width: 2 * $block-width + 2 * 33px;
+
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      padding-bottom: 80px;
+    }
+  }
+
+  //iPad landscape
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    &__title {
+      width: 2 * $block-width + 222px;
+
+      margin-top: 62px;
+      margin-bottom: 26px;
+    }
+
+    &__slider {
+      width: 2 * $block-width + 2 * 222px;
+
+      margin: 0 auto;
+    }
+
+    &__wrapper {
+      padding-bottom: 80px;
+    }
+  }
+
+  //iPhone 6+ landscape
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
     &__title {
       margin-top: 46px;
@@ -39,7 +81,7 @@
     }
 
     &__wrapper {
-      width: 2 * $block-width;
+      width: 2 * $block-width + 38px;
       box-sizing: border-box;
       padding-left: 60px;
 
@@ -60,7 +102,42 @@
     &__text {
       width: $block-width;
 
-      margin-left: 196px;
+      margin-left: 234px;
+    }
+  }
+
+  //iPhone 6 landscape
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    &__title {
+      margin-top: 46px;
+
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 2 * $block-width + 38px;
+      box-sizing: border-box;
+      padding-left: 60px;
+
+      margin: 0 auto 32px;
+    }
+
+    &__img,
+    &__author,
+    &__company {
+      float: left;
+      clear: left;
+    }
+
+    &__company {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      width: $block-width;
+
+      margin-left: 234px;
     }
   }
 

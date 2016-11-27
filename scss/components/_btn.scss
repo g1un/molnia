@@ -32,6 +32,18 @@
   border: none;
   outline: none;
 
+  &:hover,
+  &:focus,
+  &.--active{
+
+    svg {
+
+      polygon {
+        float: $color-torea-bay;
+      }
+    }
+  }
+
   svg {
     width: inherit;
     height: inherit;

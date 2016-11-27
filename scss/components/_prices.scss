@@ -6,7 +6,7 @@
   }
 
   &__item {
-    min-height: 192px;
+    height: 192px;
 
     background: transparent url('../img/sec-3-slide-1.jpg') no-repeat center center;
     background-size: cover;
@@ -24,7 +24,7 @@
   @media only screen and (min-width: 480px) {
 
     .container {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__list {
@@ -33,7 +33,7 @@
     }
 
     &__item {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__nav {
@@ -56,7 +56,7 @@
   @media only screen and (min-width: 1024px) {
 
     .container {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__table {
@@ -75,7 +75,7 @@
     }
 
     &__item {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__nav {
@@ -91,7 +91,7 @@
   @media only screen and (min-width: $width-lg) {
 
     .container {
-      min-height: 640px;
+      height: 640px;
     }
 
     &__table {
@@ -110,7 +110,7 @@
     }
 
     &__item {
-      min-height: 640px;
+      height: 640px;
     }
 
     &__nav {
@@ -130,7 +130,7 @@
     }
 
     &__item {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__info {
@@ -146,7 +146,7 @@
     }
 
     &__item {
-      min-height: 928px;
+      height: 928px;
     }
 
     &__info {
@@ -158,7 +158,7 @@
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
     .container {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__list {
@@ -167,7 +167,7 @@
     }
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__nav {
@@ -187,7 +187,7 @@
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
     &__item {
-      min-height: 240px;
+      height: 240px;
     }
   }
 
@@ -195,7 +195,7 @@
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
     .container {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__list {
@@ -204,7 +204,7 @@
     }
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__nav {
@@ -224,7 +224,7 @@
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
     .container {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__list {
@@ -233,7 +233,7 @@
     }
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
 
     &__nav {

@@ -2,7 +2,7 @@
 .intro-slider {
   
   &__item {
-    min-height: 192px;
+    height: 192px;
 
     background: transparent url('../img/slide-01.jpg') no-repeat center center;
     background-size: cover;
@@ -18,7 +18,7 @@
     width: 100%;
 
     &__item {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__nav {
@@ -37,7 +37,7 @@
     width: 100%;
 
     &__item {
-      min-height: 736px;
+      height: 736px;
     }
 
     &__nav {
@@ -51,7 +51,7 @@
     width: 100%;
 
     &__item {
-      min-height: $width-lg / 2;
+      height: $width-lg / 2;
     }
 
     &__nav {
@@ -86,7 +86,7 @@
     width: 100%;
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
   }
 
@@ -94,7 +94,7 @@
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 
     &__item {
-      min-height: 240px;
+      height: 240px;
     }
   }
 
@@ -105,7 +105,7 @@
     width: 100%;
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
   }
 
@@ -116,7 +116,7 @@
     width: 100%;
 
     &__item {
-      min-height: 607px;
+      height: 607px;
     }
   }
 }

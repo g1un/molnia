@@ -1,6 +1,7 @@
 /*script*/
 $(document).ready( function () {
 	// alert(window.devicePixelRatio + ' ' + screen.width + ' ' + screen.height + ' ' + window.orientation);
+	// alert(window.devicePixelRatio + ' ' + window.innerWidth + ' ' + window.innerHeight + ' ' + window.orientation);
 });
 //slider
 $('.js-slider').each(function (idx, item) {
@@ -9,7 +10,7 @@ $('.js-slider').each(function (idx, item) {
 
 	// alert(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.height >= 1024) || (screen.width >= 1024 && screen.height >= 768)) && $(this).hasClass('js-slider-2'));
 
-	if(window.devicePixelRatio < 2 && ((screen.width >= 768 && screen.width < 1280) && $(this).hasClass('js-slider-2'))) {
+	if(window.devicePixelRatio < 2 && ((window.innerWidth >= 768 && window.innerWidth < 1280) && $(this).hasClass('js-slider-2'))) {
 		$(this).slick({
 			slide: "#" + carouselId + " .js-slider-item",
 			appendArrows: "#" + carouselId + " .js-slider-nav",
@@ -18,7 +19,7 @@ $('.js-slider').each(function (idx, item) {
 			infinite: false,
 			slidesToShow: 2
 		});
-	} else if(window.devicePixelRatio < 2 && (screen.width >= 1280) && $(this).hasClass('js-slider-2')) {
+	} else if(window.devicePixelRatio < 2 && (window.innerWidth >= 1280) && $(this).hasClass('js-slider-2')) {
 		$(this).slick({
 			slide: "#" + carouselId + " .js-slider-item",
 			appendArrows: "#" + carouselId + " .js-slider-nav",

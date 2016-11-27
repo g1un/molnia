@@ -20,8 +20,8 @@
     margin-left: -33px;
   }
 
-  //iPad portrait
-  @media only screen and (min-width: 768px) {
+  //iPad portrait & width >= 480
+  @media only screen and (min-width: 480px) {
 
     .container {
       min-height: 736px;
@@ -135,6 +135,22 @@
 
     &__info {
       margin: 96px 0 0;
+    }
+  }
+
+  //Laptop >= 1920
+  @media only screen and (min-width: $width-xxlg) {
+
+    .container {
+      height: 928px;
+    }
+
+    &__item {
+      min-height: 928px;
+    }
+
+    &__info {
+      margin: 192px 0 0;
     }
   }
 

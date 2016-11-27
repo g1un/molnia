@@ -60,5 +60,10 @@
   @media only screen and (min-width: $width-xlg) {
     height: 736px;
   }
+
+  //Laptop >= 1920
+  @media only screen and (min-width: $width-xxlg) {
+    height: 928px;
+  }
 }
 /*/tags*/

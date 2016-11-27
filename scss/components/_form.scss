@@ -1,5 +1,6 @@
 /*form*/
 .form {
+  position: relative;
 
   &__item {
     margin-bottom: 16px;
@@ -7,6 +8,15 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__error {
+    position: absolute;
+    top: -53px;
+  }
+
+  &__has-error {
+    border-color: $color-red-radical;
   }
 }
 /*/form*/

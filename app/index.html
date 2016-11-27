@@ -9,7 +9,7 @@
   <body>
     <div class="up-message">
       <div class="container">
-        <div class="logo-sm up-message__logo"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5">
+        <div class="logo-sm up-message__logo js-logo"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5">
     <path fill="#142E99" d="M-255.5 441.4h-19l6-6h-12.7l4.5-4.5h19.1l-6 6h12.7l-4.6 4.5zm-21.8-40.5l11.9 12.1 11.9-12.1v24.4h-5.4v-11.8l-6.5 6.6-6.5-6.6v11.8h-5.4v-24.4z"/>
 </svg></div>
         <p class="text-semibold-md-common up-message__text">Оформите заказ за <span class="white">15:00</span> минут и получите скидку <span class="white">20%</span></p>
@@ -18,17 +18,11 @@
     <section class="intro">
       <div class="intro__buttons">
         <div class="container clearfix">
-          <button type="button" class="btn-menu intro__menu-btn js-btn-menu"><svg width="48px" height="32px" viewbox="0 0 48 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-SE-(portrait)" transform="translate(-64.000000, -32.000000)" fill="#FFFFFF">
-            <g id="menu-humburger" transform="translate(64.000000, 31.000000)">
-                <polygon id="Fill-1" points="0 5.0012 48 5.0012 48 0.9992 0 0.9992"/>
-                <polygon id="Fill-2" points="0 18.9972 48 18.9972 48 14.9972 0 14.9972"/>
-                <polygon id="Fill-3" points="0 33.0032 48 33.0032 48 29.0032 0 29.0032"/>
-            </g>
-        </g>
-    </g>
-</svg></button><a href="#" class="text-xs white btn-enter intro__enter-btn js-btn-login"><svg viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="btn-menu intro__menu-btn js-btn-menu"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-546 810.8 48 32">
+	<polygon fill="#FFFFFF" points="-546,814.8 -498,814.8 -498,810.8 -546,810.8 "/>
+	<polygon fill="#FFFFFF" points="-546,828.8 -498,828.8 -498,824.8 -546,824.8 "/>
+	<polygon fill="#FFFFFF" points="-546,842.8 -498,842.8 -498,838.8 -546,838.8 "/>
+</svg></button><a href="#" class="text-xs white btn-enter intro__enter-btn js-btn-login"><svg viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" class="btn-enter__blur">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13" transform="translate(-1056.000000, -109.000000)">
             <g id="link-login" transform="translate(1056.000000, 106.000000)">
@@ -41,19 +35,27 @@
             </g>
         </g>
     </g>
+</svg><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-285 408.9 24 24" class="btn-enter__hover">
+	<path id="Fill-1" fill="#F92855" d="M-285,420.9c0-6.6,5.4-12,12-12s12,5.4,12,12c0,6.6-5.4,12-12,12S-285,427.5-285,420.9"/>
+	<path id="Fill-3" fill="#FFFFFF" d="M-267,422.9c0,3.3-2.7,6-6,6s-6-2.7-6-6"/>
+	<path id="Fill-7-Copy" fill="#132E99" d="M-277,418.4c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5c0-0.8,0.7-1.5,1.5-1.5
+	S-277,417.6-277,418.4"/>
+	<rect x="-270" y="417.9" fill="#132E99" width="5" height="1"/>
 </svg>Вход</a>
         </div>
       </div>
       <div class="container options">
-        <div class="intro-slider intro__slider js-slider">
-          <div class="intro-slider__item js-slider-item"></div>
-          <div class="intro-slider__item js-slider-item"></div>
+        <div class="intro-slider intro__slider js-places-slider">
+          <div class="intro-slider__item intro-slider__gym js-slider-item"></div>
+          <div class="intro-slider__item intro-slider__home js-slider-item"></div>
+          <div class="intro-slider__item intro-slider__office js-slider-item"></div>
           <div class="slider-nav intro-slider__nav js-slider-nav"></div>
         </div>
         <div class="intro__options">
-          <div class="info-block intro__device-type">
-            <div class="info-block__wrapper">
-              <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo">
+          <div class="intro__wrapper">
+            <div class="info-block intro__item intro__device-type">
+              <div class="info-block__wrapper">
+                <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo js-logo">
     <defs>
         <polygon id="path-1" points="0 53.5 179.192647 53.5 179.192647 0.037 0 0.037"/>
     </defs>
@@ -77,43 +79,43 @@
         </g>
     </g>
 </g></svg>
-                <p class="text-md-common info-block__text">Починим ваш Apple<br><a href="#">в спортзале!</a></p>
+                  <p class="text-md-common info-block__text">Починим ваш Apple<br><a href="#"><span class="js-places-text">в спортзале</span>!</a></p>
+                </div>
+                <form action="#" method="get" class="form">
+                  <p class="text-xs-common red-radical lh-1-5 hide form__error">Поле заполнено некорректно</p>
+                  <div data-placeholder="Ваше устройство Apple?" class="js-select select form__item">
+                    <select name="device" data-placeholder="Ваше устройство Apple?">
+                      <option value=""></option>
+                      <option value="iPhone4">iPhone 1</option>
+                      <option value="iPhone 4S">iPhone 2</option>
+                      <option value="iPad">iPad 3</option>
+                      <option value="Apple Watch">Apple Watch 4</option>
+                      <option value="iPhone4">iPhone 5</option>
+                      <option value="iPhone 4S">iPhone 6</option>
+                      <option value="iPad">iPad 7</option>
+                      <option value="Apple Watch">Apple Watch 8</option>
+                      <option value="iPhone4">iPhone 9</option>
+                      <option value="iPhone 4S">iPhone 10</option>
+                      <option value="iPad">iPad 11</option>
+                      <option value="Apple Watch">Apple Watch 12</option>
+                    </select>
+                  </div>
+                  <div data-placeholder="Что сломалось?" class="js-select select form__item">
+                    <select name="device" data-placeholder="Что сломалось?">
+                      <option value=""></option>
+                      <option value="iPhone4">iPhone4</option>
+                      <option value="iPhone 4S">iPhone 4S</option>
+                      <option value="iPad">iPad</option>
+                      <option value="Apple Watch">Apple Watch</option>
+                    </select>
+                  </div>
+                  <input type="tel" name="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="btn-input form__item js-tel">
+                  <input type="submit" name="device-submit" value="Узнать стоимость" class="btn-hover form__item">
+                </form>
               </div>
-              <p class="text-xs red deveice-type__error hide">Поле заполнено некорректно</p>
-              <form action="#" method="get" class="form device-type__form">
-                <div data-placeholder="Ваше устройство Apple?" class="js-select select form__item">
-                  <select name="device" data-placeholder="Ваше устройство Apple?">
-                    <option value=""></option>
-                    <option value="iPhone4">iPhone 1</option>
-                    <option value="iPhone 4S">iPhone 2</option>
-                    <option value="iPad">iPad 3</option>
-                    <option value="Apple Watch">Apple Watch 4</option>
-                    <option value="iPhone4">iPhone 5</option>
-                    <option value="iPhone 4S">iPhone 6</option>
-                    <option value="iPad">iPad 7</option>
-                    <option value="Apple Watch">Apple Watch 8</option>
-                    <option value="iPhone4">iPhone 9</option>
-                    <option value="iPhone 4S">iPhone 10</option>
-                    <option value="iPad">iPad 11</option>
-                    <option value="Apple Watch">Apple Watch 12</option>
-                  </select>
-                </div>
-                <div data-placeholder="Что сломалось?" class="js-select select form__item">
-                  <select name="device" data-placeholder="Что сломалось?">
-                    <option value=""></option>
-                    <option value="iPhone4">iPhone4</option>
-                    <option value="iPhone 4S">iPhone 4S</option>
-                    <option value="iPad">iPad</option>
-                    <option value="Apple Watch">Apple Watch</option>
-                  </select>
-                </div>
-                <input type="tel" name="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="btn-input form__item js-tel">
-                <input type="submit" name="device-submit" value="Узнать стоимость" class="btn-hover form__item">
-              </form>
             </div>
-          </div>
-          <div class="info-block hide menu js-block js-menu">
-            <button type="button" class="close info-block__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div class="info-block hide menu intro__item js-block js-menu">
+              <button type="button" class="close-red info-block__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13-(open-menu)" transform="translate(-361.000000, -152.000000)" fill="#FFFFFF">
             <g id="Group" transform="translate(80.000000, 120.000000)">
@@ -126,22 +128,22 @@
         </g>
     </g>
 </svg></button>
-            <div class="info-block__wrapper menu__wrapper">
-              <nav class="menu__nav">
-                <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Помощь</a></li>
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Подарочные карты</a></li>
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Вы мастер?</a></li>
-                  <li class="text-semibold-xs-common white menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Рус</a>/<a href="#" class="text-semibold-xs-common white menu__link">Eng</a></li>
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Вход</a></li>
-                  <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link js-btn-city">Ваш город: Санкт-Петербург</a></li>
-                </ul>
-              </nav>
-              <div class="menu__social social">
-                <h4 class="text-semibold-sm-common white social__title">#Molnia</h4>
-                <ul class="social__list">
-                  <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
+              <div class="info-block__wrapper menu__wrapper">
+                <nav class="menu__nav">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Помощь</a></li>
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Подарочные карты</a></li>
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Вы мастер?</a></li>
+                    <li class="text-semibold-xs-common white menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Рус</a>/<a href="#" class="text-semibold-xs-common white menu__link">Eng</a></li>
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link">Вход</a></li>
+                    <li class="menu__item"><a href="#" class="text-semibold-xs-common white menu__link js-btn-city">Ваш город: Санкт-Петербург</a></li>
+                  </ul>
+                </nav>
+                <div class="menu__social social">
+                  <h4 class="text-semibold-sm-common white social__title">#Molnia</h4>
+                  <ul class="social__list">
+                    <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13-(open-menu)" transform="translate(-224.000000, -576.000000)" fill="#FFFFFF">
             <g id="Group" transform="translate(80.000000, 120.000000)">
@@ -152,7 +154,7 @@
         </g>
     </g>
 </svg></a></li>
-                  <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
+                    <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13-(open-menu)" transform="translate(-288.000000, -576.000000)" fill="#FFFFFF">
             <g id="Group" transform="translate(80.000000, 120.000000)">
@@ -163,7 +165,7 @@
         </g>
     </g>
 </svg></a></li>
-                  <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
+                    <li class="social__item"><a href="#" class="social__link"><svg viewbox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="social__img">
     <defs>
         <polygon id="path-1" points="32.066 0 0.000666666667 0 0.000666666667 31.9994667 32.066 31.9994667 32.066 4.73695157e-15"/>
     </defs>
@@ -187,12 +189,12 @@
         </g>
     </g>
 </g></svg></a></li>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="info-block hide city js-block js-city">
-            <button type="button" class="close info-block__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div class="info-block hide city intro__item js-block js-city">
+              <button type="button" class="close-red info-block__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13-(open-menu)" transform="translate(-361.000000, -152.000000)" fill="#FFFFFF">
             <g id="Group" transform="translate(80.000000, 120.000000)">
@@ -205,8 +207,8 @@
         </g>
     </g>
 </svg></button>
-            <div class="info-block__wrapper">
-              <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo">
+              <div class="info-block__wrapper">
+                <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo js-logo">
     <defs>
         <polygon id="path-1" points="0 53.5 179.192647 53.5 179.192647 0.037 0 0.037"/>
     </defs>
@@ -230,18 +232,18 @@
         </g>
     </g>
 </g></svg>
-                <p class="text-md-common white info-block__text">Починим ваш Apple<br><a href="#">в вашем городе!</a></p>
+                  <p class="text-md-common white info-block__text">Починим ваш Apple<br><a href="#">в вашем городе!</a></p>
+                </div>
+                <ul class="city__list">
+                  <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Москва</a></li>
+                  <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Санкт-Петербург</a></li>
+                  <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Ростов</a></li>
+                  <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Новгород</a></li>
+                </ul>
               </div>
-              <ul class="city__list">
-                <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Москва</a></li>
-                <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Санкт-Петербург</a></li>
-                <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Ростов</a></li>
-                <li class="city__item"><a href="#" class="text-semibold-xs-common white lh-2 city__link">Новгород</a></li>
-              </ul>
             </div>
-          </div>
-          <div class="info-block hide login js-block js-login">
-            <button type="button" class="close info-block__close login__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <div class="info-block hide login intro__item js-block js-login">
+              <button type="button" class="close-blue info-block__close login__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13-(open-menu)" transform="translate(-361.000000, -152.000000)" fill="#FFFFFF">
             <g id="Group" transform="translate(80.000000, 120.000000)">
@@ -254,24 +256,25 @@
         </g>
     </g>
 </svg></button>
-            <div class="info-block__wrapper">
-              <div class="info-block__header login__header"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5" class="info-block__logo login__logo">
+              <div class="info-block__wrapper">
+                <div class="info-block__header login__header"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5" class="info-block__logo login__logo js-logo">
     <path fill="#142E99" d="M-255.5 441.4h-19l6-6h-12.7l4.5-4.5h19.1l-6 6h12.7l-4.6 4.5zm-21.8-40.5l11.9 12.1 11.9-12.1v24.4h-5.4v-11.8l-6.5 6.6-6.5-6.6v11.8h-5.4v-24.4z"/>
 </svg>
-                <p class="text-md-common info-block__text">Вход и регистрация</p>
-              </div>
-              <p class="text-xs-common lh-1-5 login__text">Введите, пожалуйста, свой номер мобильного телефона или e-mail, и мы пришлем вам код для активации</p>
-              <p class="text-xs-common lh-1-5 login__text hide">Введите, пожалуйста, код, который мы отправили вам на мобильный телефон.</p>
-              <div class="login__form">
-                <p class="text-xs-common white lh-1-5 hide login__error">Поле заполнено некорректно</p>
-                <form action="#" method="get" class="form hide login__register">
-                  <input type="text" name="tel-or-email" placeholder="Номер телефона или e-mail" class="btn-border-red form__item">
-                  <input type="submit" name="register-submit" value="Продолжить" class="btn-hover btn-hover--torea form__item">
-                </form>
-                <form action="#" method="get" class="form login__entry">
-                  <input type="tel" name="code" placeholder="_ _ _ _" class="btn-border-red form__item js-login-code">
-                  <input type="submit" name="entry-submit" value="Продолжить" class="btn-hover btn-hover--torea form__item">
-                </form>
+                  <p class="text-md-common info-block__text">Вход и регистрация</p>
+                </div>
+                <p class="text-xs-common lh-1-5 login__text">Введите, пожалуйста, свой номер мобильного телефона или e-mail, и мы пришлем вам код для активации</p>
+                <p class="text-xs-common lh-1-5 login__text hide">Введите, пожалуйста, код, который мы отправили вам на мобильный телефон.</p>
+                <div class="login__form">
+                  <p class="text-xs-common white lh-1-5 hide login__error">Поле заполнено некорректно</p>
+                  <form action="#" method="get" class="form login__register">
+                    <input type="text" name="tel-or-email" placeholder="Номер телефона или e-mail" class="btn-border-red form__item">
+                    <input type="submit" name="register-submit" value="Продолжить" class="btn-hover btn-hover--torea form__item">
+                  </form>
+                  <form action="#" method="get" class="form hide login__entry">
+                    <input type="tel" name="code" placeholder="_ _ _ _" class="btn-border-red form__item js-login-code">
+                    <input type="submit" name="entry-submit" value="Продолжить" class="btn-hover btn-hover--torea form__item">
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -459,9 +462,9 @@
     </section>
     <section class="prices">
       <div class="container">
-        <div class="prices__list js-slider">
-          <div class="prices__item js-slider-item">
-            <ul class="tags">
+        <div class="prices__list js-prices-slider">
+          <div class="prices__item prices__watch js-slider-item">
+            <ul class="tags js-defect-points">
               <li class="tags__item"><svg viewbox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" class="tags__img">
     <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-1248-13" transform="translate(-449.000000, -1477.000000)">
@@ -512,13 +515,13 @@
 </svg></li>
             </ul>
           </div>
-          <div class="prices__item js-slider-item"></div>
-          <div class="prices__item js-slider-item"></div>
+          <div class="prices__item prices__iphone js-slider-item"></div>
+          <div class="prices__item prices__ipod js-slider-item"></div>
           <div class="slider-nav prices__nav js-slider-nav"></div>
         </div>
         <div class="prices__table">
           <div class="info-block prices-device prices__info">
-            <div class="info-block__wrapper"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo prices-device__logo">
+            <div class="info-block__wrapper"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo prices-device__logo js-logo">
     <defs>
         <polygon id="path-1" points="0 53.5 179.192647 53.5 179.192647 0.037 0 0.037"/>
     </defs>
@@ -542,12 +545,12 @@
         </g>
     </g>
 </g></svg>
-              <ul class="prices-device__nav">
+              <ul class="prices-device__nav js-prices-nav">
                 <li class="prices-device__item"><a href="#" class="text-semibold-xs-common prices-device__link">Apple Watch</a></li>
                 <li class="prices-device__item"><a href="#" class="text-semibold-xs-common prices-device__link">iPhone</a></li>
                 <li class="prices-device__item"><a href="#" class="text-semibold-xs-common prices-device__link">iPod</a></li>
               </ul>
-              <div class="prices-device__info">
+              <div class="prices-device__info js-defect-info">
                 <div class="two-columns">
                   <div class="text-semibold-xs-common two-columns__left">Замена стекла</div>
                   <div class="text-xs-common two-columns__right">от 1500 руб.</div>
@@ -782,7 +785,7 @@
       <div class="container">
         <div class="info-block gift__wrapper">
           <div class="info-block__wrapper">
-            <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo">
+            <div class="info-block__header"><svg viewbox="0 0 180 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="info-block__logo js-logo">
     <defs>
         <polygon id="path-1" points="0 53.5 179.192647 53.5 179.192647 0.037 0 0.037"/>
     </defs>
@@ -952,11 +955,33 @@
 </g></svg></a></li>
           </ul>
         </div>
-        <div class="logo-sm-red footer__logo"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5">
+        <div class="logo-sm-red footer__logo js-logo"><svg xmlns="http://www.w3.org/2000/svg" viewbox="-281.3 400.9 30.2 40.5">
     <path fill="#142E99" d="M-255.5 441.4h-19l6-6h-12.7l4.5-4.5h19.1l-6 6h12.7l-4.6 4.5zm-21.8-40.5l11.9 12.1 11.9-12.1v24.4h-5.4v-11.8l-6.5 6.6-6.5-6.6v11.8h-5.4v-24.4z"/>
 </svg></div>
       </div>
     </footer>
+    <div class="cite hide js-logo-cite">
+      <button type="button" class="close-blue cite__close js-close"><svg viewbox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1248-13-(open-menu)" transform="translate(-361.000000, -152.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(80.000000, 120.000000)">
+                <g id="button-close" transform="translate(281.000000, 32.000000)">
+                    <rect id="Rectangle-3" transform="translate(11.000000, 11.000000) rotate(45.000000) translate(-11.000000, -11.000000) " x="-3" y="10" width="28" height="2"/>
+                    <rect id="Rectangle-3" transform="translate(11.000000, 11.000000) rotate(45.000000) translate(-11.000000, -11.000000) " x="-3" y="10" width="28" height="2"/>
+                    <rect id="Rectangle-3" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " x="-3" y="10" width="28" height="2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></button>
+      <div class="cite__container">
+        <p class="cite__text">Things don't have to change the world<br> to be important.</p>
+        <div class="clearfix cite__wrapper">
+          <div class="cite__author">Steve Jobs</div>
+          <div class="cite__company">molnia.pro</div>
+        </div>
+      </div>
+    </div>
     <script src="js/all.js"></script>
   </body>
 </html>

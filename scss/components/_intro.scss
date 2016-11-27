@@ -63,7 +63,7 @@
       top: 64px;
       left: 0;
       right: 0;
-      z-index: 1;
+      z-index: 2;
 
       padding: 33px 0 0;
 
@@ -94,6 +94,17 @@
       height: $width-lg / 2;
 
       margin: 0 auto;
+
+      position: relative;
+    }
+
+    &__wrapper {
+      position: relative;
+      z-index: 2;
+    }
+
+    &__item {
+      bottom: 0;
     }
 
     &__device-type {

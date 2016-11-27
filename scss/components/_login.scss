@@ -10,13 +10,6 @@
 
   background: $color-red-radical;
 
-  &__close {
-
-    rect {
-      fill: $color-torea-bay;
-    }
-  }
-
   &__logo {
     width: 40px;
     height: 54px;
@@ -37,6 +30,10 @@
   &__error {
     position: absolute;
     top: -44px;
+  }
+
+  &__has-error {
+    border-color: #fff;
   }
 }
 /*/login*/

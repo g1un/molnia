@@ -1,0 +1,95 @@
+/*cite*/
+.cite {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background: $color-red-radical;
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: $block-width;
+    height: 100%;
+
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-family: Proxima-Nova-Semibold, sans-serif;
+    font-size: 26px;
+    line-height: 1.38em;
+    color: $color-torea-bay;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 27px;
+
+    font-family: Proxima-Nova-Semibold, sans-serif;
+    font-size: 26px;
+    line-height: 1.38em;
+    color: $color-torea-bay;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    br {
+      display: none;
+    }
+  }
+
+  &__author,
+  &__company {
+    font-family: Proxima-Nova-Semibold, sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    color: $color-torea-bay;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    float: left;
+  }
+
+  &__company {
+    float: right;
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    &__container {
+      width: 930px;
+    }
+
+    &__text {
+      margin-bottom: 33px;
+
+      font-size: 68px;
+      line-height: 1.06em;
+
+      br {
+        display: inline;
+      }
+    }
+
+    &__author,
+    &__company {
+      font-size: 34px;
+    }
+  }
+}
+/*/cite*/

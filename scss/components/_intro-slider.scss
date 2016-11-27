@@ -3,8 +3,20 @@
   
   &__item {
     height: 192px;
+  }
 
+  &__gym {
     background: transparent url('../img/slide-01.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__home {
+    background: transparent url('../img/sec-3-slide-1.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__office {
+    background: transparent url('../img/sec-5-slide-1.jpg') no-repeat center center;
     background-size: cover;
   }
 
@@ -33,12 +45,6 @@
 
   //iPad landscape
   @media only screen and (min-width: 1024px) {
-    position: absolute;
-    width: 100%;
-
-    &__item {
-      height: 736px;
-    }
 
     &__nav {
       display: none;
@@ -47,8 +53,7 @@
 
   //Laptop >= 1280
   @media only screen and (min-width: $width-lg) {
-    position: absolute;
-    width: 100%;
+    z-index: 1;
 
     &__item {
       height: $width-lg / 2;
@@ -57,10 +62,7 @@
     &__nav {
       display: block;
 
-      position: absolute;
       bottom: 45px;
-      left: 50%;
-      margin-left: -33px;
     }
   }
 

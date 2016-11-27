@@ -29,6 +29,14 @@
   &__img {
     width: 33px;
     height: 32px;
+
+    &:hover,
+    &:focus {
+
+      path {
+        fill: $color-red-radical;
+      }
+    }
   }
 }
 /*/social*/

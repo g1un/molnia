@@ -9,4 +9,28 @@
   border: none;
   outline: none;
 }
+
+.close-red {
+  @extend .close;
+
+  &:hover,
+  &:focus {
+
+    rect {
+      fill: $color-red-radical;
+    }
+  }
+}
+
+.close-blue {
+  @extend .close;
+
+  &:hover,
+  &:focus {
+
+    rect {
+      fill: $color-torea-bay;
+    }
+  }
+}
 /*/close*/

@@ -172,14 +172,48 @@ html
                             img(src='img/svg/logo-molnia-header.svg').info-block__logo.prices-device__logo.js-logo
                             ul.prices-device__nav.js-prices-nav
                                 li.prices-device__item
-                                    a(href='#').text-semibold-xs-common.prices-device__link Apple Watch
+                                    a(href='#').text-semibold-xs-common.prices-device__link.active Apple Watch
                                 li.prices-device__item
                                     a(href='#').text-semibold-xs-common.prices-device__link iPhone
                                 li.prices-device__item
                                     a(href='#').text-semibold-xs-common.prices-device__link iPod
-                            div.prices-device__info.js-defect-info
+                            div.prices-device__info.prices-device__watch.js-defect-info
                                 div.two-columns
                                     div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1500 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1600 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1700 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1800 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                            div(style='display: none;').prices-device__info.prices-device__iphone.js-defect-info
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена батареи
+                                    div.text-xs-common.two-columns__right от 1500 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1600 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1700 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена стекла
+                                    div.text-xs-common.two-columns__right от 1800 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                            div(style='display: none;').prices-device__info.prices-device__ipod.js-defect-info
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена корпуса
                                     div.text-xs-common.two-columns__right от 1500 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
@@ -197,7 +231,7 @@ html
         section.frame-torea
             div.container.promo.promo--call
                 h2.text-md-common.promo__title Как вызвать Molnia?
-                div.promo__list.js-slider.js-slider-2
+                div.promo__list.js-slider.js-slider-2.js-slider-not-infinite
                     div.promo__item.js-slider-item
                         div.promo__wrapper
                             img(src='img/svg/ukazhite-polomku.svg').promo__img
@@ -305,6 +339,8 @@ html
                 img(src='img/svg/button-close.svg')
             div.cite__container
                 p.cite__text Things don't have to change the world<br> to be important.
+                    span.cite__molnia
+                        img(src='img/svg/molnia.svg')
                 div.clearfix.cite__wrapper
                     div.cite__author Steve Jobs
                     div.cite__company molnia.pro

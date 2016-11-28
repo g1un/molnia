@@ -15,7 +15,7 @@
   &__link {
 
     &:hover,
-    &:focus {
+    &.active {
       text-decoration: underline;
     }
   }

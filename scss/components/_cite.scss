@@ -45,9 +45,23 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    position: relative;
+
     br {
       display: none;
     }
+  }
+
+  &__molnia {
+    position: absolute;
+    bottom: -4px;
+    left: 7px;
+
+    display: block;
+
+    width: 24px;
+
+    line-height: 0;
   }
 
   &__author,
@@ -84,6 +98,13 @@
       br {
         display: inline;
       }
+    }
+
+    &__molnia {
+      bottom: -14px;
+      left: 230px;
+
+      width: 60px;
     }
 
     &__author,

@@ -37,8 +37,8 @@
     height: inherit;
   }
 
-  //Laptop >= 1280
-  @media only screen and (min-width: $width-lg) {
+  //iPad landscape
+  @media only screen and (min-width: 1024px) {
     width: 48px;
     height: 48px;
 
@@ -92,8 +92,8 @@
     display: none;
   }
 
-  //Laptop >= 1280
-  @media only screen and (min-width: $width-lg) {
+  //iPad landscape
+  @media only screen and (min-width: 1024px) {
 
     svg {
       vertical-align: top;

@@ -25,14 +25,14 @@
 
 //molnia
 @font-face {
-	font-family: 'MolniaPro';
-	src: url('../fonts/glyphicons-halflings-regular.eot');
-	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
-	url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-	url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-	url('../fonts/glyphicons-halflings-regular.svg#myfont') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'MolniaPro-Medium';
+	src: url('../fonts/molnia-pro-medium-webfont.woff2') format('woff2'),
+		 url('../fonts/molnia-pro-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'MolniaPro-Bold';
+	src: url('../fonts/molnia-pro-bold-webfont.woff2') format('woff2'),
+		 url('../fonts/molnia-pro-bold-webfont.woff') format('woff');
 }
 /*end of fonts*/

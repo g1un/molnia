@@ -61,7 +61,7 @@ html
                                             option(value='Apple Watch') Apple Watch
                                     input(type='tel', name='tel', placeholder='+7 ( _ _ _ ) _ _ _ - _ _ - _ _').btn-input.form__item.js-tel
                                     input(type='submit', name='device-submit', value='Узнать стоимость').btn-hover.form__item
-                        div.info-block.hide.menu.intro__item.js-block.js-menu
+                        div(style='display: none;').info-block.menu.intro__item.js-block.js-menu
                             button(type='button').close-red.info-block__close.js-close
                                 img(src='img/svg/button-close.svg')
                             div.info-block__wrapper.menu__wrapper
@@ -95,7 +95,7 @@ html
                                         li.social__item
                                             a(href='#').social__link
                                                 img(src='img/svg/soc-icon-ig.svg').social__img
-                        div.info-block.hide.city.intro__item.js-block.js-city
+                        div(style='display: none;').info-block.city.intro__item.js-block.js-city
                             button(type='button').close-red.info-block__close.js-close
                                 img(src='img/svg/button-close.svg')
                             div.info-block__wrapper
@@ -113,7 +113,7 @@ html
                                         a(href='#').text-semibold-xs-common.white.lh-2.city__link Ростов
                                     li.city__item
                                         a(href='#').text-semibold-xs-common.white.lh-2.city__link Новгород
-                        div.info-block.hide.login.intro__item.js-block.js-login
+                        div(style='display: none;').info-block.login.intro__item.js-block.js-login
                             button(type='button').close-blue.info-block__close.login__close.js-close
                                 img(src='img/svg/button-close.svg')
                             div.info-block__wrapper
@@ -164,7 +164,7 @@ html
                             li.tags__item
                                 img(src='img/svg/pin-on-photo.svg').tags__img
                     div.prices__item.prices__iphone.js-slider-item
-                    div.prices__item.prices__ipod.js-slider-item
+                    div.prices__item.prices__ipad.js-slider-item
                     div.slider-nav.prices__nav.js-slider-nav
                 div.prices__table
                     div.info-block.prices-device.prices__info
@@ -176,7 +176,7 @@ html
                                 li.prices-device__item
                                     a(href='#').text-semibold-xs-common.prices-device__link iPhone
                                 li.prices-device__item
-                                    a(href='#').text-semibold-xs-common.prices-device__link iPod
+                                    a(href='#').text-semibold-xs-common.prices-device__link iPad
                             div.prices-device__info.prices-device__watch.js-defect-info
                                 div.two-columns
                                     div.text-semibold-xs-common.two-columns__left Замена стекла
@@ -196,37 +196,37 @@ html
                                     p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                             div(style='display: none;').prices-device__info.prices-device__iphone.js-defect-info
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена батареи
-                                    div.text-xs-common.two-columns__right от 1500 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена дисплея
+                                    div.text-xs-common.two-columns__right от 2100 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1600 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена аккумулятора
+                                    div.text-xs-common.two-columns__right от 1200 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1700 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена кнопки Home
+                                    div.text-xs-common.two-columns__right от 1200 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                                div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1800 руб.
-                                    p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
-                            div(style='display: none;').prices-device__info.prices-device__ipod.js-defect-info
                                 div.two-columns
                                     div.text-semibold-xs-common.two-columns__left Замена корпуса
-                                    div.text-xs-common.two-columns__right от 1500 руб.
+                                    div.text-xs-common.two-columns__right от 1300 руб.
+                                    p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
+                            div(style='display: none;').prices-device__info.prices-device__ipad.js-defect-info
+                                div.two-columns
+                                    div.text-semibold-xs-common.two-columns__left Замена тачскрина
+                                    div.text-xs-common.two-columns__right от 3300 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1600 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена дисплея
+                                    div.text-xs-common.two-columns__right от 5100 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide 2Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1700 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена кнопки Home
+                                    div.text-xs-common.two-columns__right от 2100 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide 3Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
                                 div.two-columns
-                                    div.text-semibold-xs-common.two-columns__left Замена стекла
-                                    div.text-xs-common.two-columns__right от 1800 руб.
+                                    div.text-semibold-xs-common.two-columns__left Замена кнопки Power
+                                    div.text-xs-common.two-columns__right от 2100 руб.
                                     p.text-xs-common.lh-2.two-columns__info.hide 4Процедура замены занимает от получаса.В конце ремонта специалисты нашей компании непременно дают гарантию на свою работу 6 месяцев.
         section.frame-torea
             div.container.promo.promo--call
@@ -334,13 +334,11 @@ html
                                 img(src='img/svg/soc-icon-ig.svg').social__img
                 div.logo-sm-red.footer__logo.js-logo
                     img(src='img/svg/logo-top-sm-blue-copy.svg')
-        div.cite.hide.js-logo-cite
+        div(style='display: none;').cite.js-logo-cite
             button(type='button').close-blue.cite__close.js-close
                 img(src='img/svg/button-close.svg')
             div.cite__container
-                p.cite__text Things don't have to change the world<br> to be important.
-                    span.cite__molnia
-                        img(src='img/svg/molnia.svg')
+                p.cite__text THINGS DON'T HAVE TO CHANGE THE WORLD<br>TO BE IмPORTANT.
                 div.clearfix.cite__wrapper
                     div.cite__author Steve Jobs
                     div.cite__company molnia.pro

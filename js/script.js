@@ -9,7 +9,7 @@ $('.js-slider').each(function (idx, item) {
 	var carouselId = "slider-" + idx;
 	this.id = carouselId;
 
-	if(window.devicePixelRatio < 2 && ((window.innerWidth >= 768 && window.innerWidth < 1280) && $(this).hasClass('js-slider-2'))) {
+	if(((window.innerWidth >= 768 && window.innerWidth < 1280) && $(this).hasClass('js-slider-2'))) {
 		if($(this).hasClass('js-slider-not-infinite')) {
 			$(this).slick({
 				slide: "#" + carouselId + " .js-slider-item",
@@ -29,7 +29,7 @@ $('.js-slider').each(function (idx, item) {
 				slidesToShow: 2
 			});
 		}
-	} else if(window.devicePixelRatio < 2 && (window.innerWidth >= 1280) && $(this).hasClass('js-slider-2')) {
+	} else if((window.innerWidth >= 1280) && $(this).hasClass('js-slider-2')) {
 		if($(this).hasClass('js-slider-not-infinite')) {
 			$(this).slick({
 				slide: "#" + carouselId + " .js-slider-item",
@@ -99,32 +99,35 @@ $(".js-login-code").mask("9 9 9 9");
 
 //close
 $('.js-close').on('click', function () {
-	$(this).parent().addClass('hide');
+	$(this).parent().hide();
 });
 
 //menu
 $('.js-btn-menu').on('click', function () {
-	$('.js-block').addClass('hide');
-	$('.js-menu').removeClass('hide');
+    var $this = $('.js-menu');
+	$('.js-block').not($this).hide();
+	$this.toggle();
 });
 
 //city
 $('.js-btn-city').on('click', function (e) {
 	e.preventDefault();
-	$('.js-block').addClass('hide');
-	$('.js-city').removeClass('hide');
+    var $this = $('.js-city');
+	$('.js-block').not($this).hide();
+    $this.toggle();
 });
 
 //login
 $('.js-btn-login').on('click', function (e) {
 	e.preventDefault();
-	$('.js-block').addClass('hide');
-	$('.js-login').removeClass('hide');
+    var $this = $('.js-login');
+	$('.js-block').not($this).hide();
+    $this.toggle();
 });
 
 //cite
 $('.js-logo').on('click', function (e) {
-	$('.js-logo-cite').removeClass('hide');
+	$('.js-logo-cite').show();
 });
 
 //slider with repair places change
@@ -194,11 +197,11 @@ if($('.js-prices-slider').length) {
 			$(pricesNavDot[1]).addClass('active');
 			$('.prices-device__iphone').show();
 		} else
-		if(currentSlide.hasClass('prices__ipod')) {
+		if(currentSlide.hasClass('prices__ipad')) {
 			defectInfoWrapper.hide();
 			pricesNavDot.removeClass('active');
 			$(pricesNavDot[2]).addClass('active');
-			$('.prices-device__ipod').show();
+			$('.prices-device__ipad').show();
 		}
 	});
 }

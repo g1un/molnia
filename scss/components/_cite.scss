@@ -27,23 +27,12 @@
   }
 
   &__text {
-    font-family: Proxima-Nova-Semibold, sans-serif;
-    font-size: 26px;
-    line-height: 1.38em;
-    color: $color-torea-bay;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  &__text {
     margin-bottom: 27px;
 
-    font-family: Proxima-Nova-Semibold, sans-serif;
+    font-family: MolniaPro-Bold, sans-serif;
     font-size: 26px;
     line-height: 1.38em;
     color: $color-torea-bay;
-    font-weight: 700;
-    text-transform: uppercase;
 
     position: relative;
 
@@ -52,25 +41,12 @@
     }
   }
 
-  &__molnia {
-    position: absolute;
-    bottom: -4px;
-    left: 7px;
-
-    display: block;
-
-    width: 24px;
-
-    line-height: 0;
-  }
-
   &__author,
   &__company {
-    font-family: Proxima-Nova-Semibold, sans-serif;
+    font-family: MolniaPro-Bold, sans-serif;
     font-size: 12px;
     line-height: 1em;
     color: $color-torea-bay;
-    font-weight: 700;
     text-transform: uppercase;
   }
 
@@ -82,8 +58,8 @@
     float: right;
   }
 
-  //Laptop >= 1280
-  @media only screen and (min-width: $width-lg) {
+  //iPad landscape
+  @media only screen and (min-width: 1024px) {
 
     &__container {
       width: 930px;
@@ -98,13 +74,6 @@
       br {
         display: inline;
       }
-    }
-
-    &__molnia {
-      bottom: -14px;
-      left: 230px;
-
-      width: 60px;
     }
 
     &__author,

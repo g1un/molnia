@@ -20,13 +20,21 @@
     height: 41px;
   }
 
-  //Laptop >= 1280
-  @media only screen and (min-width: $width-lg) {
+  //Laptop >= 1024 especially for menu
+  @media only screen and (min-width: 1024px) {
     display: block;
 
     .container {
-      width: 1028px;
+      width: 960px;
       margin: 0 auto;
+    }
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    .container {
+      width: 1028px;
     }
   }
 }

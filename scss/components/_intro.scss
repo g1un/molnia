@@ -40,24 +40,6 @@
   //iPad landscape
   @media only screen and (min-width: 1024px) {
 
-    &__options {
-      display: flex;
-      align-items: center;
-
-      width: $block-ipad;
-      height: 736px;
-
-      margin: 0 auto;
-    }
-
-    &__device-type {
-      margin: 0;
-    }
-  }
-
-  //Laptop >= 1280
-  @media only screen and (min-width: $width-lg) {
-
     &__buttons {
       position: absolute;
       top: 64px;
@@ -70,7 +52,7 @@
       background: transparent;
 
       .container {
-        width: $menu-lg;
+        width: 960px;
         margin: 0 auto;
       }
     }
@@ -80,7 +62,7 @@
     }
 
     &__enter-btn {
-      margin: 0 114px 0 0;
+      margin: 0;
 
       font-size: $fz-md;
       color: $color-torea-bay;
@@ -90,8 +72,8 @@
       display: flex;
       align-items: center;
 
-      width: $container-lg;
-      height: $width-lg / 2;
+      width: $block-ipad;
+      height: 736px;
 
       margin: 0 auto;
 
@@ -108,7 +90,29 @@
     }
 
     &__device-type {
+      margin: 0;
+
       background: #fff;
+    }
+  }
+
+  //Laptop >= 1280
+  @media only screen and (min-width: $width-lg) {
+
+    &__buttons {
+
+      .container {
+        width: $menu-lg;
+      }
+    }
+
+    &__enter-btn {
+      margin: 0 114px 0 0;
+    }
+
+    &__options {
+      width: $container-lg;
+      height: $width-lg / 2;
     }
   }
 

@@ -45,24 +45,18 @@
 
   //iPad landscape
   @media only screen and (min-width: 1024px) {
+    z-index: 1;
 
     &__nav {
-      display: none;
+      bottom: 45px;
     }
   }
 
   //Laptop >= 1280
   @media only screen and (min-width: $width-lg) {
-    z-index: 1;
 
     &__item {
       height: $width-lg / 2;
-    }
-
-    &__nav {
-      display: block;
-
-      bottom: 45px;
     }
   }
 

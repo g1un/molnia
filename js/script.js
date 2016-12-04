@@ -98,11 +98,23 @@ $('.js-slide-up').on('click', function () {
 });
 
 //menu
-$('.js-btn-menu').on('click', function () {
-	var $this = $('.js-menu');
-	$('.js-block').not($this).hide();
-	$this.toggle();
-});
+$('.js-btn-menu')
+	.on('click', function () {
+		var $this = $('.js-menu');
+		$('.js-block').not($this).hide();
+		$this.toggle();
+	})
+	.hover(
+		function() {
+			$(this).addClass('hover');
+			$(this).removeClass('blur');
+		},
+		function() {
+			$(this).addClass('blur');
+			$(this).removeClass('hover');
+		}
+	);
+
 
 //city
 $('.js-btn-city').on('click', function (e) {

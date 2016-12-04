@@ -53,7 +53,7 @@
       height: 16px;
     }
 
-    &:hover {
+    &.hover {
 
       polygon {
         animation-name: btn-menu-hover;
@@ -70,6 +70,26 @@
       }
     }
 
+    &.blur {
+
+      polygon {
+        fill: $color-torea-bay;
+
+        animation-name: btn-menu-blur;
+        animation-fill-mode: forwards;
+        animation-duration: .1s;
+        animation-delay: .066s;
+
+        &:nth-child(2) {
+          animation-delay: .033s;
+        }
+
+        &:last-child {
+          animation-delay: 0s;
+        }
+      }
+    }
+
     //btn-menu animation
     @keyframes btn-menu-hover {
 
@@ -79,6 +99,18 @@
 
       100% {
         fill: $color-torea-bay;
+      }
+    }
+
+    //btn-menu animation backwards
+    @keyframes btn-menu-blur {
+
+      0% {
+        fill: $color-torea-bay;
+      }
+
+      100% {
+        fill: #fff;
       }
     }
   }

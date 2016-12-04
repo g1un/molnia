@@ -90,6 +90,13 @@ $('.js-close').on('click', function () {
 	}
 });
 
+//js-slide-up
+$('.js-slide-up').on('click', function () {
+	$(this).parent().css({
+		'margin-top': '-64px'
+	});
+});
+
 //menu
 $('.js-btn-menu').on('click', function () {
 	var $this = $('.js-menu');
@@ -213,4 +220,12 @@ if($('.js-defect-points').length) {
 		}
 	);
 }
+
+//js-slide-down
+$(document).ready( function () {
+	$('.js-slide-down').css({
+		'margin-top': 0
+	});
+});
+
 /*/script*/

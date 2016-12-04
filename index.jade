@@ -6,7 +6,9 @@ html
         meta(name="viewport", content="width=device-width, initial-scale=1")
         link(rel='stylesheet', type='text/css', href='css/style.css')
     body
-        div.up-message
+        div.up-message.js-slide-down
+            button(type='button').close-blue.js-slide-up.up-message__close
+                img(src='img/svg/button-close.svg')
             div.container
                 div.logo-sm.up-message__logo.js-logo
                     img(src='img/svg/logo-top-sm-blue-copy.svg')

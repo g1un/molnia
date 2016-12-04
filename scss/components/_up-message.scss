@@ -2,7 +2,20 @@
 .up-message {
   display: none;
 
+  transition: margin 1s;
+
   background: $color-red-radical;
+
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    margin-top: -11px;
+    margin-right: - 416px - 44px;
+  }
 
   &__text {
     margin: 0 40px;
@@ -23,15 +36,20 @@
   //Laptop >= 1024 especially for menu
   @media only screen and (min-width: 1024px) {
     display: block;
+    margin-top: -64px;
 
     .container {
-      width: 960px;
+      width: 832px;
       margin: 0 auto;
     }
   }
 
   //Laptop >= 1280
   @media only screen and (min-width: $width-lg) {
+
+    &__close {
+      margin-right: - 514px - 44px;
+    }
 
     .container {
       width: 1028px;

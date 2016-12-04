@@ -111,10 +111,8 @@
   @media only screen and (min-width: $width-lg) {
 
     .container {
-      width: $footer-lg;
+      width: 1216px;
       height: auto;
-      box-sizing: border-box;
-      padding-right: 100px;
 
       flex-direction: row;
       align-items: flex-start;
@@ -126,13 +124,15 @@
 
       width: auto;
 
-      margin: 0 60px 0 0;
+      margin: 0 57px 0 0;
     }
 
     &__menu {
       order: 2;
 
-      margin: 0 143px 0 0;
+      width: $block-width;
+
+      margin: 0 128px 0 0;
     }
 
     &__info {
@@ -151,7 +151,8 @@
     &__messengers {
       order: 5;
 
-      margin: 32px 0 0 100px;
+      padding: 32px 96px 0 96px;
+      box-sizing: border-box;
 
       width: 100%;
     }

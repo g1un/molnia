@@ -5,79 +5,64 @@ $(document).ready( function () {
 });
 
 //slider
-$('.js-slider').each(function (idx, item) {
+$('.js-slider-2').each(function (idx, item) {
 	var carouselId = "slider-" + idx;
 	this.id = carouselId;
 
-	if(((window.innerWidth >= 768 && window.innerWidth < 1280) && $(this).hasClass('js-slider-2'))) {
-		if($(this).hasClass('js-slider-not-infinite')) {
-			$(this).slick({
-				slide: "#" + carouselId + " .js-slider-item",
-				appendArrows: "#" + carouselId + " .js-slider-nav",
-				prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-				nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-				infinite: false,
-				slidesToShow: 2
-			});
-		} else {
-			$(this).slick({
-				slide: "#" + carouselId + " .js-slider-item",
-				appendArrows: "#" + carouselId + " .js-slider-nav",
-				prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-				nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-				infinite: true,
-				slidesToShow: 2
-			});
-		}
-	} else if((window.innerWidth >= 1280) && $(this).hasClass('js-slider-2')) {
-		if($(this).hasClass('js-slider-not-infinite')) {
-			$(this).slick({
-				slide: "#" + carouselId + " .js-slider-item",
-				appendArrows: "#" + carouselId + " .js-slider-nav",
-				prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-				nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-				infinite: false,
-				slidesToShow: 3
-			});
-		} else {
-			if($(this).hasClass('js-slider-not-infinite')) {
-				$(this).slick({
-					slide: "#" + carouselId + " .js-slider-item",
-					appendArrows: "#" + carouselId + " .js-slider-nav",
-					prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-					nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-					infinite: false,
-					slidesToShow: 3
-				});
-			} else {
-				$(this).slick({
-					slide: "#" + carouselId + " .js-slider-item",
-					appendArrows: "#" + carouselId + " .js-slider-nav",
-					prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-					nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-					infinite: true,
-					slidesToShow: 3
-				});
-			}
-		}
+	if($(this).hasClass('js-slider-not-infinite')) {
+		$(this).slick({
+			slide: "#" + carouselId + " .js-slider-item",
+			appendArrows: "#" + carouselId + " .js-slider-nav",
+			prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
+			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
+			infinite: false,
+			slidesToShow: 3,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				},
+				{
+					breakpoint: 1280,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
+		});
+		$("#" + carouselId + " .js-slider-nav").appendTo($(this));
+		$(this).on('breakpoint', function(event, slick, breakpoint){
+			$("#" + carouselId + " .js-slider-nav").appendTo($(this));
+		});
 	} else {
-		if($(this).hasClass('js-slider-not-infinite')) {
-			$(this).slick({
-				slide: "#" + carouselId + " .js-slider-item",
-				appendArrows: "#" + carouselId + " .js-slider-nav",
-				prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-				nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-				infinite: false
-			});
-		} else {
-			$(this).slick({
-				slide: "#" + carouselId + " .js-slider-item",
-				appendArrows: "#" + carouselId + " .js-slider-nav",
-				prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
-				nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
-				infinite: true
-			});
-		}
+		$(this).slick({
+			slide: "#" + carouselId + " .js-slider-item",
+			appendArrows: "#" + carouselId + " .js-slider-nav",
+			prevArrow: '<button type="button" class="slider-nav__prev js-slider-prev">prev</button>',
+			nextArrow: '<button type="button" class="slider-nav__next js-slider-next">next</button>',
+			infinite: true,
+			slidesToShow: 3,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				},
+				{
+					breakpoint: 1280,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
+		});
+		$("#" + carouselId + " .js-slider-nav").appendTo($(this));
+		$(this).on('breakpoint', function(event, slick, breakpoint){
+			$("#" + carouselId + " .js-slider-nav").appendTo($(this));
+		});
 	}
 });
 
@@ -100,11 +85,14 @@ $(".js-login-code").mask("9 9 9 9");
 //close
 $('.js-close').on('click', function () {
 	$(this).parent().hide();
+	if($(this).closest('.js-logo-cite').length) {
+		$('body').removeClass('overflow-hidden');
+	}
 });
 
 //menu
 $('.js-btn-menu').on('click', function () {
-    var $this = $('.js-menu');
+	var $this = $('.js-menu');
 	$('.js-block').not($this).hide();
 	$this.toggle();
 });
@@ -112,23 +100,25 @@ $('.js-btn-menu').on('click', function () {
 //city
 $('.js-btn-city').on('click', function (e) {
 	e.preventDefault();
-    var $this = $('.js-city');
+	var $this = $('.js-city');
 	$('.js-block').not($this).hide();
-    $this.toggle();
+	$this.toggle();
 });
 
 //login
 $('.js-btn-login').on('click', function (e) {
 	e.preventDefault();
-    var $this = $('.js-login');
+	var $this = $('.js-login');
 	$('.js-block').not($this).hide();
-    $this.toggle();
+	$this.toggle();
 });
 
 //cite
 $('.js-logo').on('click', function (e) {
 	$('.js-logo-cite').show();
+	$('body').addClass('overflow-hidden');
 });
+
 
 //slider with repair places change
 if($('.js-places-slider').length) {

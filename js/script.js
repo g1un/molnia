@@ -79,7 +79,7 @@ $('.jq-selectbox__dropdown ul').enscroll({
 });
 
 //inputmask
-$(".js-tel").mask("+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9");
+$(".js-tel").mask("+7(999)999-99-99");
 $(".js-login-code").mask("9 9 9 9");
 
 //close

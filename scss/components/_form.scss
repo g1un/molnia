@@ -8,6 +8,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--tel {
+      letter-spacing: .25em;
+    }
   }
 
   &__error {

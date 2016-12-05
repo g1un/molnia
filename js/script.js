@@ -92,9 +92,13 @@ $('.js-close').on('click', function () {
 
 //js-slide-up
 $('.js-slide-up').on('click', function () {
-	$(this).parent().css({
-		'margin-top': '-64px'
-	});
+	var $this = $(this);
+	$this.parent()[0].style.marginTop = null;
+	setTimeout(function() {
+		console.log($this.parent());
+		$this.parent().hide();
+	}, 1000);
+
 });
 
 //menu

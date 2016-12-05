@@ -1,6 +1,6 @@
 /*up-message*/
 .up-message {
-  display: none;
+  margin-top: -72px;
 
   transition: margin 1s;
 
@@ -8,23 +8,30 @@
 
   position: relative;
 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 72px;
+  }
+
   &__close {
     position: absolute;
     top: 50%;
-    right: 50%;
+    right: 16px;
+    z-index: 1;
 
     margin-top: -11px;
-    margin-right: - 416px - 44px;
   }
 
   &__text {
-    margin: 0 40px;
-
-    line-height: 64px;
     text-align: center;
   }
 
   &__logo {
+    display: none;
+
     float: right;
 
     margin-top: 12px;
@@ -35,12 +42,35 @@
 
   //Laptop >= 1024 especially for menu
   @media only screen and (min-width: 1024px) {
-    display: block;
     margin-top: -64px;
 
     .container {
+      display: block;
+
       width: 832px;
       margin: 0 auto;
+      height: auto;
+    }
+
+    &__close {
+      right: 50%;
+
+      margin-right: - 416px - 44px;
+    }
+
+    &__text {
+      margin: 0 40px;
+
+      font-size: 24px;
+      line-height: 64px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__logo {
+      display: block;
     }
   }
 

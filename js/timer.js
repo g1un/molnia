@@ -24,6 +24,9 @@ if (!dedlineHours) {
     delete dateStart;
 }
 
+//проверка, был ли отчет
+var timerRun = false;
+
 function CountBox() {
     dateNow = new Date();
     amount = ((dedlineHours - dateNow.getHours())*60*60 + (dedlineMinutes - dateNow.getMinutes())*60 + (dedlineSeconds - dateNow.getSeconds()))*1000;
@@ -38,11 +41,11 @@ function CountBox() {
 			"<span class='countbox-num'><span id='countbox-secs1'><span></span>0</span><span id='countbox-secs2'><span></span>0</span></span>";
         document.getElementById("countbox").innerHTML = out;
         setTimeout("CountBox()", 10000);
-        $('.js-slide-up').parent()[0].style.marginTop = null;
-        setTimeout(function() {
-            $('.js-slide-up').parent().hide();
-        }, 1000);
+        if(timerRun) {
+            upMessage.slideUp();
+        }
     } else {
+        timerRun = true;
         days = 0;
         days1 = 0;
         days2 = 0;
@@ -85,5 +88,8 @@ function CountBox() {
 }
 
 window.onload = function () {
-    CountBox()
+    CountBox();
+    if (timerRun) {
+        upMessage.run();
+    }
 }

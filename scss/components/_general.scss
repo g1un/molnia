@@ -12,6 +12,20 @@ ul {
   padding: 0;
 }
 
+body {
+  transition: margin 1s;
+
+  &.padding {
+    margin-top: 72px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    &.padding {
+      margin-top: 64px;
+    }
+  }
+}
+
 .clearfix::after {
   content: '';
   display: table;

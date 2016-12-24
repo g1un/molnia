@@ -91,13 +91,42 @@ $('.js-close').on('click', function () {
 });
 
 //js-slide-up
-$('.js-slide-up').on('click', function () {
-	var $this = $(this);
-	$this.parent()[0].style.marginTop = null;
-	setTimeout(function() {
-		$this.parent().hide();
-	}, 1000);
-});
+// $('.js-slide-up').on('click', function () {
+// 	var $this = $(this);
+// 	$this.parent()[0].style.marginTop = null;
+// 	setTimeout(function() {
+// 		$this.parent().hide();
+// 	}, 1000);
+// });
+
+//js-up-message-close
+var upMessage = {
+	closer: $('.js-up-message-close'),
+	upMessage: function() { return this.closer.parent(); },
+	body: $('body'),
+	bodyPadding: function() {
+		this.body.addClass('padding');
+	},
+	slideUp: function() {
+		var _this = this;
+		this.upMessage()[0].style.marginTop = null;
+		this.body.removeClass('padding');
+		setTimeout(function() {
+			_this.upMessage().hide();
+		}, 1000);
+	},
+	slideDown: function() {
+		this.upMessage().css('margin-top', 0);
+	},
+	run: function() {
+		var _this = this;
+		this.bodyPadding();
+		this.slideDown();
+		this.closer.on('click', function() {
+			_this.slideUp();
+		});
+	}
+};
 
 //menu
 $('.js-btn-menu')
@@ -236,11 +265,11 @@ if($('.js-defect-points').length) {
 }
 
 //js-slide-down
-$(document).ready( function () {
-	$('.js-slide-down').css({
-		'margin-top': 0
-	});
-});
+// $(document).ready( function () {
+// 	$('.js-slide-down').css({
+// 		'margin-top': 0
+// 	});
+// });
 
 //js-up
 $('.js-up').on('click', function() {

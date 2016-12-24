@@ -98,7 +98,6 @@ $('.js-slide-up').on('click', function () {
 		console.log($this.parent());
 		$this.parent().hide();
 	}, 1000);
-
 });
 
 //menu

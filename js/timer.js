@@ -9,7 +9,7 @@ dedlineHours = getCookie("dedlineHours");
 dedlineMinutes = getCookie("dedlineMinutes");
 dedlineSeconds = getCookie("dedlineSeconds");
 
-hourX = 0; minuteX = 0; secX= 5;
+hourX = 0; minuteX = 20; secX= 0;
 
 if (!dedlineHours) {
     dateStart = new Date();

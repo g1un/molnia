@@ -48,7 +48,7 @@
   #countbox {
     display: inline-block;
     vertical-align: top;
-    min-width: 60px;
+    min-width: 43px;
     text-align: left;
   }
 
@@ -83,6 +83,10 @@
 
     &__logo {
       display: block;
+    }
+
+    #countbox {
+      min-width: 60px;
     }
   }
 

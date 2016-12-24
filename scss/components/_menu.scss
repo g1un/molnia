@@ -4,11 +4,13 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 101;
 
   padding-bottom: 56px;
 
   background: $color-torea-bay;
+
+  transition: top .5s;
 
   &__nav {
     margin-bottom: 27px;
@@ -16,6 +18,12 @@
 
   &__item {
     line-height: 3em;
+  }
+
+  //iPad landscape
+  @media only screen and (min-width: 1024px) {
+    box-sizing: border-box;
+    height: 100%;
   }
 
   //iPhone SE, 6, 6+ landscape

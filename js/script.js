@@ -95,7 +95,6 @@ $('.js-slide-up').on('click', function () {
 	var $this = $(this);
 	$this.parent()[0].style.marginTop = null;
 	setTimeout(function() {
-		console.log($this.parent());
 		$this.parent().hide();
 	}, 1000);
 });

@@ -9,7 +9,7 @@ dedlineHours = getCookie("dedlineHours");
 dedlineMinutes = getCookie("dedlineMinutes");
 dedlineSeconds = getCookie("dedlineSeconds");
 
-hourX = 0; minuteX = 20; secX= 0;
+hourX = 0; minuteX = 0; secX= 5;
 
 if (!dedlineHours) {
     dateStart = new Date();
@@ -37,7 +37,11 @@ function CountBox() {
 			"<span class='countbox-space'>:</span>" +
 			"<span class='countbox-num'><span id='countbox-secs1'><span></span>0</span><span id='countbox-secs2'><span></span>0</span></span>";
         document.getElementById("countbox").innerHTML = out;
-        setTimeout("CountBox()", 10000)
+        setTimeout("CountBox()", 10000);
+        $('.js-slide-up').parent()[0].style.marginTop = null;
+        setTimeout(function() {
+            $('.js-slide-up').parent().hide();
+        }, 1000);
     } else {
         days = 0;
         days1 = 0;

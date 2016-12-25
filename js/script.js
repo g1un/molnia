@@ -183,11 +183,11 @@ $('.js-btn-city').on('click', function (e) {
 			.show()
 			.css('top', 0);
 	}
-	$('.js-block').not($this).each(function() {
-		$(this).css('top', -$(this).outerHeight());
-		$(this).hide();
-		$(this).removeClass('show');
-	})
+	// $('.js-block').not($this).each(function() {
+	// 	$(this).css('top', -$(this).outerHeight());
+	// 	$(this).hide();
+	// 	$(this).removeClass('show');
+	// })
 });
 
 //login

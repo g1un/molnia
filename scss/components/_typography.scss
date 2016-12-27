@@ -40,6 +40,16 @@
   }
 }
 
+.text-semibold-xxs-red {
+  @extend .text-semibold;
+  font-size: $fz-xxs;
+  color: $color-red-radical;
+
+  a {
+    color: $color-red-radical;
+  }
+}
+
 .text-semibold-xs-common {
   @extend .text-semibold;
   font-size: $fz-xs;
@@ -52,6 +62,16 @@
 
 .text-semibold-sm-common {
   @extend .text-semibold;
+  font-size: $fz-sm;
+  color: $color-torea-bay;
+
+  a {
+    color: $color-torea-bay;
+  }
+}
+
+.text-sm-common {
+  @extend .text-reg;
   font-size: $fz-sm;
   color: $color-torea-bay;
 

@@ -127,6 +127,9 @@
   //iPad landscape
   @media only screen and (min-width: 1024px) {
 
+    font-size: $fz-md;
+    color: $color-torea-bay;
+
     svg {
       vertical-align: top;
 

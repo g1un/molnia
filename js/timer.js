@@ -24,7 +24,7 @@ if (!dedlineHours) {
     delete dateStart;
 }
 
-//проверка, был ли отчет
+//проверка, был ли отсчет
 var timerRun = false;
 
 function CountBox() {

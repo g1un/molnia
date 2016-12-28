@@ -6,7 +6,8 @@
   }
 
   &__buttons {
-    padding-bottom: 15px;
+    //padding-bottom: 15px;
+    min-height: 48px;
 
     background: $color-torea-bay;
   }
@@ -36,6 +37,19 @@
   &._terms {
 
     .intro {
+
+      &__logo {
+        margin-top: 10px;
+        margin-right: 32px;
+        float: right;
+
+        width: 20px;
+        height: 27px;
+
+        path {
+          fill: #fff;
+        }
+      }
 
       &__options {
         justify-content: flex-end;
@@ -73,6 +87,7 @@
       right: 0;
       z-index: 2;
 
+      min-height: 0;
       padding: 33px 0 0;
 
       background: transparent;
@@ -81,6 +96,10 @@
         width: 960px;
         margin: 0 auto;
       }
+    }
+
+    &__logo {
+      display: none;
     }
 
     &__menu-btn {

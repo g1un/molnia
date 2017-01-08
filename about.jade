@@ -1,0 +1,269 @@
+doctype html
+html
+    head
+        title «Molnia»
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+    body
+        div.up-message.js-slide-down
+            button(type='button').close-blue.up-message__close.js-slide-up.js-up-message-close
+                img(src='img/svg/button-close.svg')
+            div.container
+                div.logo-sm.up-message__logo.js-logo
+                    img(src='img/svg/logo-top-sm-blue-copy.svg')
+                p.text-semibold-xs-common.lh-1-5.up-message__text Оформите заказ за <span id='countbox' class='white'>15:00</span><br> минут и получите скидку <span class='white'>20%</span>
+        section.intro._about
+            div.intro__buttons
+                div.container.clearfix
+                    button(type='button', data-btn-for='js-menu').btn-menu.intro__menu-btn.js-btn-menu
+                        img(src='img/svg/menu-humburger.svg')
+                    div.logo-sm.intro__logo.js-logo
+                        img(src='img/svg/logo-top-sm-blue-copy.svg')
+            div.container.options
+                div.intro-slider.intro__slider
+                    div.intro-slider__item.intro-slider__repair
+                div.intro__options
+                    div.intro__wrapper
+                        div.info-block.intro__item.intro__device-type
+                            div.info-block__wrapper
+                                div.info-block__header
+                                    img(src='img/svg/logo-molnia-header.svg').info-block__logo.js-logo
+                                    p.text-md-common.info-block__text
+                                        |Выездной сервис по<br>ремонту техники Apple.
+                                p.info-block__paragraph Мы давно хотели создать что-то уникальное, нетипичное для России, приятно удивляющее, яркое. Molnia — не просто «очередной» выездной сервис по ремонту техники Apple. Мы понимаем, что каждая мелочь имеет значение.
+                        div(style='display: none;').info-block.menu.intro__item.js-block.js-menu
+                            button(type='button').close-red.info-block__close.js-close
+                                img(src='img/svg/button-close.svg')
+                            div.info-block__wrapper.menu__wrapper
+                                nav.menu__nav
+                                    ul.menu__list
+                                        li.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link О нас
+                                        li.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link Помощь
+                                        li.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link Подарочные карты
+                                        li.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link Вы мастер?
+                                        li.text-semibold-xs-common.white.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link Рус
+                                            |/
+                                            a(href='#').text-semibold-xs-common.white.menu__link Eng
+                                        li.menu__item
+                                            a(href='#').text-semibold-xs-common.white.menu__link Вход
+                                        li.menu__item
+                                            a(href='#', data-btn-for='js-city').text-semibold-xs-common.white.menu__link.js-btn-city Ваш город: Санкт-Петербург
+                                div.menu__social.social
+                                    h4.text-semibold-sm-common.white.social__title #Molnia
+                                    ul.social__list
+                                        li.social__item
+                                            a(href='#').social__link
+                                                img(src='img/svg/soc-icon-fb.svg').social__img
+                                        li.social__item
+                                            a(href='#').social__link
+                                                img(src='img/svg/soc-icon-vk.svg').social__img
+                                        li.social__item
+                                            a(href='#').social__link
+                                                img(src='img/svg/soc-icon-ig.svg').social__img
+                        div(style='display: none;').info-block.city.intro__item.js-block.js-city
+                            button(type='button').close-red.info-block__close.js-close
+                                img(src='img/svg/button-close.svg')
+                            div.info-block__wrapper
+                                div.info-block__header
+                                    img(src='img/svg/logo-molnia-red.svg').info-block__logo.js-logo
+                                    p.text-md-common.white.info-block__text
+                                        | Починим ваш Apple<br>
+                                        a(href='#') в вашем городе!
+                                ul.city__list
+                                    li.city__item
+                                        a(href='#').text-semibold-xs-common.white.lh-2.city__link Москва
+                                    li.city__item
+                                        a(href='#').text-semibold-xs-common.white.lh-2.city__link Санкт-Петербург
+                                    li.city__item
+                                        a(href='#').text-semibold-xs-common.white.lh-2.city__link Ростов
+                                    li.city__item
+                                        a(href='#').text-semibold-xs-common.white.lh-2.city__link Новгород
+                        div(style='display: none;').info-block.login.intro__item.js-block.js-login
+                            button(type='button').close-blue.info-block__close.login__close.js-close
+                                img(src='img/svg/button-close.svg')
+                            div.info-block__wrapper
+                                div.info-block__header.login__header
+                                    img(src='img/svg/logo-top-sm-blue-copy.svg').info-block__logo.login__logo.js-logo
+                                    p.text-md-common.info-block__text Вход и регистрация
+                                p.text-xs-common.lh-1-5.login__text Введите, пожалуйста, свой номер мобильного телефона или e-mail, и мы пришлем вам код для активации
+                                p.text-xs-common.lh-1-5.login__text.hide Введите, пожалуйста, код, который мы отправили вам на мобильный телефон.
+                                div.login__form
+                                    p.text-xs-common.white.lh-1-5.hide.login__error Поле заполнено некорректно
+                                    form(action='#', method='get').form.login__register
+                                        input(type='text', name='tel-or-email', placeholder='Номер телефона или e-mail').btn-border-red.form__item
+                                        input(type='submit', name='register-submit', value='Продолжить').btn-hover.btn-hover--torea.form__item
+                                    form(action='#', method='get').form.hide.login__entry
+                                        input(type='tel', name='code', placeholder='_ _ _ _').btn-border-red.form__item.js-login-code
+                                        input(type='submit', name='entry-submit', value='Продолжить').btn-hover.btn-hover--torea.form__item
+        section.frame-red
+            div.container.reviews._about
+                h2.text-md.red-radical.lh-1-5.reviews__title О нас
+                div.reviews__slider.js-slider.js-slider-2
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            p.text-xs-common.lh-2.reviews__text Мы давно хотели создать что-то уникальное, нетипичное для России, приятно удивляющее, яркое. Molnia — не просто «очередной» выездной сервис по ремонту техники Apple. Мы понимаем, что каждая мелочь имеет значение.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            p.text-xs-common.lh-2.reviews__text Мы выбрали самых профессиональных и вежливых мастеров, которые знают, как обращаться с лучшей техникой в мире, снабдили их качественными проверенными запчастями и материалами и научили их всему, что умеют в наших Apple мастерских I CAN FIX.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            p.text-xs-common.lh-2.reviews__text У нас можно заказать любой ремонт Apple Watch, iPhone или iPad: замена дисплея, аккумулятора, восстановление после попадания жидкости и так далее. Где бы вы не находились — мы пришлем лучшего мастера по ремонту Apple к вам домой, в офис, в ближайшее кафе или даже на луну!
+                    div.slider-nav.clearfix.js-slider-nav
+        section.prices._about
+            div.container
+                div.prices__list
+                    div.prices__item.prices__founders
+                div.prices__table
+                    div.info-block.prices-device.prices__info
+                        div.info-block__wrapper
+                            div.info-block__header
+                                img(src='img/svg/logo-molnia-header.svg').info-block__logo.js-logo
+                                p.text-md-common.info-block__text Мы — Molnia!
+                            p.info-block__paragraph «Смысл в том, чтобы “обновить” те же самые преимущества, о которых мы писали на главной странице для клиента».
+                            p.info-block__paragraph.info-block__signature #[b Владимир Бословяко], основатель
+                            p.info-block__paragraph «Смысл в том, чтобы “обновить” те же самые преимущества, о которых мы писали на главной странице для клиента».
+                            p.info-block__paragraph.info-block__signature #[b Денис Сурков], основатель
+
+        section.frame-red
+            div.container.promo
+                h2.text-md-common.promo__title Наши преимущества
+                div.promo__list.js-slider.js-slider-2
+                    div.promo__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/tam-gde-vam-udobno.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title Там, где вам удобно
+                            p.text-xs-common.promo__text Мастер приедет, куда вы скажете. Кинотеатр, офис, парк — любое удобное для вас место и время.
+                    div.slider__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/vashe-vremya-bezcenno.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title Ваше время бесценно
+                            p.text-xs-common.promo__text Не тратьте время на поездку в мастерскую и ожидание ремонта. Дела не ждут, а время — дар!
+                    div.slider__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/nam-yasno-s-poluslova.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title Нам ясно с полуслова
+                            p.text-xs-common.promo__text В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    div.slider-nav.clearfix.js-slider-nav
+        section.frame-torea
+            div.container.promo.promo--call
+                h2.text-md-common.promo__title Как вызвать Molnia?
+                div.promo__list.js-slider.js-slider-2.js-slider-not-infinite
+                    div.promo__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/ukazhite-polomku.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title
+                                |1.<br>
+                                |Укажите поломки<br>
+                                |вашего устройства
+                    div.promo__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/kuda-i-kogda-priehat.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title
+                                |2.<br>
+                                |Куда и когда<br>
+                                |приехать?
+                    div.promo__item.js-slider-item
+                        div.promo__wrapper
+                            img(src='img/svg/viberite-udachniy-sposob-oplaty.svg').promo__img
+                            h3.text-semibold-md-common.promo__item-title
+                                |3.<br>
+                                |Выберите удобный<br>
+                                |способ оплаты
+                    div.slider-nav.clearfix.promo__nav.js-slider-nav
+                a(href='#').btn-hover.promo__btn.js-up Легко!
+        section.gift
+            div.container
+                div.info-block.gift__wrapper
+                    div.info-block__wrapper
+                        div.info-block__header
+                            img(src='img/svg/logo-molnia-header.svg').info-block__logo.js-logo
+                            p.text-md-common.info-block__text Если у вас всё ОК, позабодтесь о друге!
+                        div.two-columns.two-columns--low.gift__info
+                            div.text-semibold-xs-common.red-radical.two-columns__left Подарочная карта
+                            div.text-xs-common.two-columns__right от 500 руб.
+                            p.text-xs-common.lh-2.two-columns__info Подарочная карта — классный подарок! Очень подарочный и всякое такое!
+                        a(href='#').btn-hover.js-up Заказать
+        section.frame-red
+            div.container.reviews
+                h2.text-md.red-radical.lh-1-5.reviews__title О нас говорят:
+                div.reviews__slider.js-slider.js-slider-2
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            img(src='img/avatar-1.jpg').reviews__img
+                            h3.text-semibold-xs-common.reviews__author Лариса Зверева
+                            h4.text-xxs-common.lh-2.reviews__company Time out
+                            p.text-xs-common.lh-2.reviews__text Мастер приедет туда, куда вы скажете. Дом, кинотеатр, офис, парк — нам подойдет любое удобное для вас место и время.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            img(src='img/avatar-2.jpg').reviews__img
+                            h3.text-semibold-xs-common.reviews__author Борис Савченко
+                            h4.text-xxs-common.lh-2.reviews__company The Village
+                            p.text-xs-common.lh-2.reviews__text Дела не ждут! Не тратьте время на поездку в мастерскую и ожидание ремонта. Лучше займитесь чем-нибудь.
+                    div.reviews__item.js-slider-item
+                        div.reviews__wrapper
+                            img(src='img/avatar-3.jpg').reviews__img
+                            h3.text-semibold-xs-common.reviews__author Анна Романовская
+                            h4.text-xxs-common.lh-2.reviews__company Atas
+                            p.text-xs-common.lh-2.reviews__text Простой заказ за 1 минуту, без лишних звонков. В цену нашего ремонта «все включено»: выезд мастера, работа и запчасти.
+                    div.slider-nav.clearfix.js-slider-nav
+        footer.footer
+            div.container
+                ul.footer__menu
+                    li.footer__menu-item
+                        a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link О сервисе
+                    li.footer__menu-item
+                        a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Работа в Molnia
+                    li.footer__menu-item
+                        a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Вопросы и ответы
+                    li.footer__menu-item
+                        a(href='#').text-semibold-xs-common.white.lh-2.footer__menu-link Пользовательское соглашение
+                div.footer__messengers.messengers
+                    h3.text-xs-common.white.lh-2.messengers__title Пишите нам в мессенджеры:
+                    ul.messengers__list
+                        li.messengers__item
+                            a(href='#').btn-border.messengers__link
+                                img(src='img/svg/footer-icon-btn-fb.svg').btn-border__fb
+                                |Messenger
+                        li.messengers__item
+                            a(href='#').btn-border.messengers__link
+                                img(src='img/svg/footer-icon-btn-vk.svg').btn-border__vk
+                                |Вконтакте
+                        li.messengers__item
+                            a(href='#').btn-border.messengers__link
+                                img(src='img/svg/footer-icon-btn-tg.svg').btn-border__tg
+                                |Telegram
+                div.footer__info
+                    p.text-semibold-xs-common.white.lh-2.footer__schedule с 8:00 до 00:00 / без выходных
+                    a(href='tel:+7 921 432 45 63').text-semibold-xs-common.white.lh-2.footer__tel +7 921 432 45 63
+                    a(href='mailto:real@molnia.pro').text-semibold-xs-common.white.lh-2.footer__email real@molnia.pro
+                div.footer__social.social
+                    h4.text-semibold-sm-common.white.social__title #Molnia
+                    ul.social__list
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-fb.svg').social__img
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-vk.svg').social__img
+                        li.social__item
+                            a(href='#').social__link
+                                img(src='img/svg/soc-icon-ig.svg').social__img
+                div.logo-sm-red.footer__logo.js-logo
+                    img(src='img/svg/logo-top-sm-blue-copy.svg')
+        div(style='display: none;').cite.js-logo-cite
+            button(type='button').close-blue.cite__close.js-close
+                img(src='img/svg/button-close.svg')
+            div.cite__container
+                p.cite__text THINGS DON'T HAVE TO CHANGE THE WORLD<br>TO BE IмPORTANT.
+                div.clearfix.cite__wrapper
+                    div.cite__author Steve Jobs
+                    div.cite__company molnia.pro
+
+
+        script(src='js/all.js')

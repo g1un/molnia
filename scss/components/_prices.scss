@@ -27,12 +27,32 @@
     background-size: cover;
   }
 
+  &__founders {
+    background: transparent url('../img/founders.jpg') no-repeat left center;
+    background-size: cover;
+  }
+
   &__nav {
     position: absolute;
 
     bottom: 30px;
     left: 50%;
     margin-left: -33px;
+  }
+
+  &._about {
+
+    .prcies {
+
+    }
+
+    .info-block__header {
+      margin-bottom: 26px;
+    }
+
+    .info-block__paragraph {
+      line-height: 1.5em;
+    }
   }
 
   //iPad portrait & width >= 480

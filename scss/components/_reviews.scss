@@ -29,6 +29,16 @@
     margin-bottom: 3px;
   }
 
+  &._about {
+
+    .reviews {
+
+      &__title {
+        margin-bottom: 96px;
+      }
+    }
+  }
+
   //iPad portrait
   @media only screen and (min-width: 768px) {
 

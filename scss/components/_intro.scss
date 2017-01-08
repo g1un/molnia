@@ -63,6 +63,25 @@
     }
   }
 
+  &._about {
+
+    .intro {
+
+      &__logo {
+        margin-top: 10px;
+        margin-right: 32px;
+        float: right;
+
+        width: 20px;
+        height: 27px;
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
   //iPad portrait & width >= 480
   @media only screen and (min-width: 480px) {
 
@@ -162,6 +181,32 @@
           border: 1px solid $color-torea-bay;
         }
       }
+    }
+
+    &._about {
+
+      //.intro {
+      //
+      //  &__buttons {
+      //    padding: 63px 0 0;
+      //  }
+      //
+      //  &__wrapper {
+      //    min-width: 354px;
+      //    margin-top: 36px;
+      //  }
+      //
+      //  &__text {
+      //    margin-top: 116px;
+      //    margin-right: 48px;
+      //  }
+      //
+      //  &__device-type {
+      //    display: block;
+      //
+      //    border: 1px solid $color-torea-bay;
+      //  }
+      //}
     }
   }
 

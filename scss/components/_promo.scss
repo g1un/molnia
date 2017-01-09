@@ -11,6 +11,10 @@
     width: $block-width;
 
     margin: 30px auto;
+
+    &--about {
+      margin-bottom: 73px;
+    }
   }
 
   &__wrapper {
@@ -24,6 +28,19 @@
     display: block;
 
     margin: 0 auto 13px;
+  }
+
+  &__img-wrapper {
+    height: 90px;
+    position: relative;
+    font-size: 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      height: 100%;
+    }
   }
 
   &__item-title {
@@ -67,6 +84,30 @@
 
       &__item-title {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  &._about {
+
+    .promo {
+
+      &__title {
+        display: block;
+      }
+
+      &__img {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      &__item-title {
+        min-height: 2em;
+        text-align: left;
+      }
+
+      &__text {
+        text-align: left;
       }
     }
   }

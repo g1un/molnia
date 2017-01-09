@@ -72,10 +72,10 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('app/js'))
 });
 
-gulp.task('watch', ['browserSync', 'jade', 'sass', 'inline', 'scripts'], function(){
+gulp.task('watch', ['browserSync', 'jade', 'sass', 'inline', 'scripts', 'svgmin'], function(){
     gulp.watch('**/*.scss', ['sass']);
     gulp.watch('**/*.jade', function() {
-      runSequence('jade', 'inline', 'reload');
+      runSequence('jade', 'svgmin', 'inline', 'reload');
     });
     gulp.watch('js/*.js', ['scripts']);
 });
@@ -84,7 +84,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app',
-      index: 'terms.html'
+      index: 'about.html'
     }
   })
 });

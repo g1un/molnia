@@ -1,25 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-geo</title>
-    <desc>Created with Sketch.</desc>
+<svg width="16" height="18" viewBox="0 0 16 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        icon-geo
+    </title>
     <defs>
-        <polygon id="path-1" points="14.3998875 0.055265625 14.3998875 17.4375 0 17.4375 0 0.055265625 14.3998875 0.055265625"></polygon>
+        <path id="a" d="M14.4.055v17.383H0V.055h14.4z"/>
     </defs>
-    <g id="Terms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Terms---Desc" transform="translate(-817.000000, -468.000000)">
-            <g id="Group-18-Copy" transform="translate(817.000000, 468.000000)">
-                <g id="icon-geo" transform="translate(0.750000, 0.000000)">
-                    <g id="Group-3" transform="translate(0.000000, 0.057262)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="Clip-2"></g>
-                        <path d="M7.199955,17.4375 L2.1087675,12.3463125 C-0.702945,9.5346 -0.702945,4.975875 2.1087675,2.16405 L2.10888,2.16405 C4.9205925,-0.6476625 9.4793175,-0.6476625 12.2911425,2.16405 L12.2911425,2.16405 C15.102855,4.975875 15.102855,9.5346 12.2911425,12.3463125 L7.199955,17.4375 Z" id="Fill-1" fill="#F92855" mask="url(#mask-2)"></path>
-                    </g>
-                    <path d="M4.654395,9.85804875 L4.654395,9.85804875 C3.2484825,8.45213625 3.2484825,6.17277375 4.654395,4.76697375 L4.654395,4.76686125 C6.0603075,3.36106125 8.33967,3.36106125 9.74547,4.76686125 L9.74547,4.76697375 C11.1513825,6.17277375 11.1513825,8.45213625 9.74547,9.85804875 L9.74547,9.85804875 C8.33967,11.2639613 6.0603075,11.2639613 4.654395,9.85804875" id="Fill-4" fill="#FFFFFF"></path>
-                </g>
-            </g>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(.75 .057)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path d="M7.2 17.438l-5.091-5.092A7.2 7.2 0 0 1 12.29 2.164a7.2 7.2 0 0 1 0 10.182L7.2 17.437z" fill="#F92855" mask="url(#b)"/>
         </g>
+        <path d="M5.404 9.858a3.6 3.6 0 0 1 5.091-5.091 3.6 3.6 0 1 1-5.091 5.091" fill="#FFF"/>
     </g>
 </svg>

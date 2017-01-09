@@ -6,7 +6,6 @@
   }
 
   &__buttons {
-    //padding-bottom: 15px;
     min-height: 48px;
 
     background: $color-torea-bay;
@@ -182,32 +181,6 @@
         }
       }
     }
-
-    &._about {
-
-      //.intro {
-      //
-      //  &__buttons {
-      //    padding: 63px 0 0;
-      //  }
-      //
-      //  &__wrapper {
-      //    min-width: 354px;
-      //    margin-top: 36px;
-      //  }
-      //
-      //  &__text {
-      //    margin-top: 116px;
-      //    margin-right: 48px;
-      //  }
-      //
-      //  &__device-type {
-      //    display: block;
-      //
-      //    border: 1px solid $color-torea-bay;
-      //  }
-      //}
-    }
   }
 
   //Laptop >= 1280
@@ -233,10 +206,19 @@
   //iPhone 5 landscape
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
+    &__options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__device-type {
+      margin: 0;
+    }
+
     &__device-type {
       width: $block-width;
-
-      margin: 33px auto 0;
 
       background: #fff;
     }
@@ -245,10 +227,19 @@
   //iPhone 6 landscape
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
+    &__options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__device-type {
+      margin: 0;
+    }
+
     &__device-type {
       width: $block-width;
-
-      margin: 33px auto 0;
 
       background: #fff;
     }
@@ -257,10 +248,19 @@
   //iPhone 6+ landscape
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 
+    &__options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__device-type {
+      margin: 0;
+    }
+
     &__device-type {
       width: $block-width;
-
-      margin: 33px auto 0;
 
       background: #fff;
     }

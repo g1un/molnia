@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Landing-64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-1248-13-(open-menu)" transform="translate(-224.000000, -576.000000)" fill="#FFFFFF">
-            <g id="Group" transform="translate(80.000000, 120.000000)">
-                <g id="Group-7" transform="translate(144.000000, 456.000000)">
-                    <path d="M25.0893333,0 L6.976,0 C3.12266667,0 0,3.13866667 0,7.01066667 L0,24.9893333 C0,28.8613333 3.12266667,32 6.976,32 L16,32 L16,18 L12,18 L12,14 L16,14 L16,12 C16,8.69466667 18.6933333,6 22,6 L26,6 L26,10 L22,10 C20.8986667,10 20,10.9 20,12 L20,14 L26,14 L25,18 L20,18 L20,32 L25.0893333,32 C28.9426667,32 32.0653333,28.8613333 32.0653333,24.9893333 L32.0653333,7.01066667 C32.0653333,3.13866667 28.9426667,0 25.0893333,0" id="soc-icon-fb"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M25.09 0H6.975C3.123 0 0 3.139 0 7.01v17.98C0 28.86 3.123 32 6.976 32H16V18h-4v-4h4v-2c0-3.305 2.693-6 6-6h4v4h-4c-1.101 0-2 .9-2 2v2h6l-1 4h-5v14h5.09c3.853 0 6.975-3.139 6.975-7.01V7.01c0-3.87-3.122-7.01-6.975-7.01" fill="#FFF" fill-rule="evenodd"/>
 </svg>

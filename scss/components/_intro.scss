@@ -3,6 +3,10 @@
 
   &__options {
     overflow: auto;
+
+    &._about {
+      //display: none;
+    }
   }
 
   &__buttons {
@@ -141,6 +145,10 @@
       margin: 0 auto;
 
       position: relative;
+
+      &._about {
+        display: flex;
+      }
     }
 
     &__wrapper {
